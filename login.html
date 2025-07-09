@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Sánchez & Sánchez</title>
+  <style>
+    body { font-family: Arial; padding: 2em; background: #f7f7f7; }
+    form { max-width: 300px; margin: auto; background: white; padding: 2em; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+    input { width: 100%; margin-top: 1em; padding: 0.5em; }
+    button { margin-top: 1em; padding: 0.7em; width: 100%; background: #0078D7; color: white; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <form id="loginForm">
+    <h2>Acceso</h2>
+    <input type="text" name="Abonado" placeholder="Usuario" required />
+    <input type="password" name="Clave" placeholder="Contraseña" required />
+    <button type="submit">Entrar</button>
+    <div id="msg" style="margin-top: 1em; color: red;"></div>
+  </form>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new URLSearchParams(new FormData(form));
+
+      const res = await fetch("Autentificacion.asp", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: data
+      });
+
+      const text = await res.text();
+      if (res.status === 302 || res.redirected) {
+        window.location.href = res.url || "Index.asp";
+      } else {
+        document.getElementById("msg").textContent = text || "Usuario o contraseña incorrectos.";
+      }
+    });
+  </script>
+</body>
+</html>
