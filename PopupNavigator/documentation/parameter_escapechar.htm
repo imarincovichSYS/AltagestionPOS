@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PopupNavigator: EscapeChar Parameter</title>
+</head>
+
+<body>
+
+<h1><font face="Arial">EscapeChar Parameter</font></h1>
+
+<p><font face="Arial">If you want to ignore the special meaning of delimiter
+char, you must precede it with escape char.</font></p>
+<h2><font face="Arial">Format</font></h2>
+<p><font face="Courier New">VALUE="<a href="subparameters.htm#Char">&lt;Char&gt;</a>&quot;<br>
+DEFAULT="\"</font></p>
+<h2><font face="Arial">Example</font></h2>
+<p><font face="Arial">Let us say wee want to display delimiter character within
+menu item label. Of course, we could use default &quot;\&quot;, in which case we
+wouldn't have to include EscapeChar parameter.</font></p>
+<p>
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="EscapeChar" value="#">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Delimiter char = #;;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+</p>
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0">
+archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;EscapeChar&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;#&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000"><b><u>&quot;Delimiter char = #;;test1.htm&quot;</u></b></font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;</font><font COLOR="#000000"><br>
+PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+<p>&nbsp;</p>
+<p><a href="index.htm"><font face="Arial"><i>PopupNavigator Reference Home</i></font></a></p>
+</body>
+
+</html>

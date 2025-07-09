@@ -1,0 +1,2673 @@
+BODY
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 10px;
+    /*BACKGROUND-IMAGE: url(images/tb_fondo_verde_01.jpg);*/
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+
+TABLE
+{
+    FONT-SIZE: 12px;
+}
+
+FIELDSET{
+    FONT-SIZE: 12px;
+    border-width: 1px;
+    border-style: solid;
+    /*border-color: #848284;*/
+    border-color: #206A47;
+}
+
+legend{
+	FONT-SIZE: 12px;
+	font-weight: bold;
+	COLOR: #206A47;
+}
+
+.calendario_dia
+{
+	font-size: 10px;
+	text-align: center;
+	width:26px; 
+	cursor: pointer;
+	/*background-color: #FFFFFF;*/
+	height: 24px;
+}
+
+.table_inicio
+{
+    BORDER-TOP-WIDTH: 1px;
+    BORDER-LEFT-WIDTH: 1px;
+    FONT-SIZE: 12px;
+    BORDER-BOTTOM-WIDTH: 1px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BORDER-RIGHT-WIDTH: 1px
+}
+
+.boton_Reset_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Reset_16x16.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    HEIGHT: 16px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Agregar_Cliente_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Agregar_cliente_40x40.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Agregar_Cliente_24
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Agregar_cliente_24x24.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    HEIGHT: 24px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Factura_Asignar_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Factura_Asignar_40x40.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Factura_Emitir_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Factura_Emitir_40x40.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Pdf_Guia_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Pdf_Guia_40x40.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Pdf_Factura_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Pdf_Factura_40x40.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Pdf_Boleta_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Pdf_Boleta_40x40.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Rechazar_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Rechazar_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    HEIGHT: 16px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Leer_CodigoBarra_30
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Leer_CodigoBarra_30x30.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 30px;
+    HEIGHT: 30px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Leer_CodigoBarra_Cancelar_30
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Leer_CodigoBarra_Cancelar_30x30.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 30px;
+    HEIGHT: 30px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+
+.boton_periodo_calendario
+{
+	font-size:12px; 
+	font-weight: bold; 
+	width: 60px; 
+	height: 26px; 
+	background-color:#EEEEEE;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.boton_agregar_tab{
+	font-size:12px; 
+	font-weight: bold; 
+	width: 20px; 
+	height: 20px; 
+	background-color:#EEEEEE;
+	cursor: pointer;
+	vertical-align: middle;
+	BACKGROUND-IMAGE:url(../imagenes/Ico_Boton_Agregar_Tab.gif);
+}
+
+.boton_buscar_calendario
+{
+	font-size:12px; 
+	font-weight: bold; 
+	width: 60px; 
+	height: 26px; 
+	background-color:#EEEEEE;
+	cursor: pointer;
+	vertical-align: middle;
+	BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_60x26.gif);
+}
+
+.boton_buscar_calendario_30
+{
+	font-size:12px; 
+	font-weight: bold; 
+	width: 30px; 
+	height: 26px; 
+	background-color:#EEEEEE;
+	cursor: pointer;
+	vertical-align: middle;
+	BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_30x26.gif);
+}
+
+.boton_Pre_Orden_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Pre_Orden_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    HEIGHT: 20px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Pre_Orden_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Pre_Orden_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    HEIGHT: 16px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cliente_Bloqueado_26
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cliente_Bloqueado_26x26.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 26px;
+    HEIGHT: 26px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cliente_Bloqueado_24
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cliente_Bloqueado_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    HEIGHT: 24px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cliente_Bloqueado_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cliente_Bloqueado_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    HEIGHT: 20px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cliente_Bloqueado_20_No_Pointer
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cliente_Bloqueado_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    HEIGHT: 20px;    
+    CURSOR: default;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cliente_Bloqueado_14_No_Pointer_Trans
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cliente_Bloqueado_14x14_Trans.gif);
+    /*background-color: white;*/
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 14px;
+    HEIGHT: 14px;    
+    CURSOR: default;
+    BORDER-BOTTOM: white;
+    BORDER: 0px;
+}
+
+.boton_Cliente_Bloqueado_12_No_Pointer_CCC
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cliente_Bloqueado_12x12_CCC.gif);
+    /*background-color: white;*/
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 12px;
+    HEIGHT: 12px;    
+    CURSOR: default;
+    BORDER-BOTTOM: white;
+    BORDER: 0px;
+}
+
+.boton_Preview
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Preview_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Informacion_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Informacion_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+
+.boton_Cuenta
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cuenta_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Wallet
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Wallet_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Upload
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Upload_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Cancelar_1_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cancelar_1_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    HEIGHT: 20px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cancelar_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cancelar_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    HEIGHT: 20px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cancelar_30
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cancelar_30x30.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 30px;
+    HEIGHT: 30px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cancelar_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cancelar_40x40.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cancelar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cancelar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Asignar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Asignar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Actualizar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Actualizar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Cambiar_Gris_30
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_Gris_30x30.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 30px;
+    HEIGHT: 30px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar_Gris_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_Gris_40x40.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar_2_30
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_2_30x30.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 30px;
+    HEIGHT: 30px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar_2_24
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_2_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    HEIGHT: 24px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar_2_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_2_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    HEIGHT: 20px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar_2_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_2_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    HEIGHT: 16px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar_30
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_30x30.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 30px;
+    HEIGHT: 30px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar_24
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    HEIGHT: 24px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    HEIGHT: 20px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    HEIGHT: 16px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Cambiar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_24x24_ant.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Limpiar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Limpiar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Limpiar_14
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Limpiar_14x14.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 14px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 14px;    
+}
+
+.boton_Limpiar_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Limpiar_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Limpiar_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Limpiar_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;    
+}
+
+.boton_Buscar_14
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_14x14.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 14px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 14px;    
+}
+
+.boton_Buscar_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Buscar_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;    
+}
+
+.boton_Buscar_16_trans
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_16x16_trans.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Buscar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Buscar_on_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_16x16_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Buscar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Buscar_off_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_16x16_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Buscar_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Nuevo_on_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Nuevo_16x16_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Nuevo_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Nuevo_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Nuevo_off_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Nuevo_16x16_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Nuevo_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Nuevo_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Editar_on_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Editar_16x16_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Editar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Editar_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Editar_off_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Editar_16x16_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Editar_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Editar_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Eliminar2
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar2_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Eliminar_14
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_14x14.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 14px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 14px;    
+}
+
+.boton_Eliminar_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Eliminar_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;    
+}
+
+.boton_Eliminar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Eliminar_on_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_16x16_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Eliminar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Eliminar_off_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_16x16_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Eliminar_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Atras_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Atras_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Atras_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Atras_40x40.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Atras
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Atras_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Atras_on_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Atras_16x16_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Atras_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Atras_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Atras_off_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Atras_16x16_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Atras_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Atras_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Agregar_1_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Agregar_1_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;    
+}
+
+.boton_Agregar_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Agregar_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;    
+}
+
+.boton_Agregar_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Agregar_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Agregar_14
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Agregar_14x14.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 14px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 14px;    
+}
+
+.boton_Agregar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Agregar_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+
+.boton_Info_Add_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Info_Add_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Close_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Close_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Check_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Check_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Check1_40_CCC
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Check1_40x40_CCC.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Check1_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Check1_40x40.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Check_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Check_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    HEIGHT: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Check_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Check_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    HEIGHT: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Check
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Check_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    HEIGHT: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Delete
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Delete_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+
+.boton_Warning_16_No_Pointer
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Warning_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    HEIGHT: 16px;
+    CURSOR: default;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Warning_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Warning_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    HEIGHT: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Warning_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Warning_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    HEIGHT: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    
+}
+
+.boton_Warning
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Warning_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Load{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Load_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Verificar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Verificar_24X24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Grabar_1_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Grabar_1_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+	HEIGHT: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Grabar_14
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Grabar_14x14.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 14px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 14px;
+}
+
+.boton_Grabar_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Grabar_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;
+}
+
+.boton_Grabar_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Grabar_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;
+}
+
+.boton_Grabar_20_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Grabar_20x20_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;
+}
+
+.boton_Grabar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Grabar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Grabar_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Grabar_40x40.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    HEIGHT: 40px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Lista_Precio_20{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Lista_Precio_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;    
+}
+
+.boton_Clientes_30x20{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Clientes_30x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 30px;
+    HEIGHT: 20px;    
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+}
+
+.boton_Clientes_24x16{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Clientes_24x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Grafico_20{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Grafico_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;    
+}
+
+.boton_Grafico_16{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Grafico_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+} 
+
+.boton_Trash
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Trash_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Pdf
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Pdf_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Logs
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Logs_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Logs_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Logs_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;    
+}
+
+.boton_Logs_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Logs_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Inventario
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_inventario_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Excel
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Excel_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Excel_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Excel_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Excel_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Excel_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+
+.boton_Email_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Email_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Email_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Email_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Comentario
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Comentario_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Comentario_20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Comentario_20x20.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 20px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 20px;    
+}
+
+.boton_Comentario_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Comentario_16x16.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 16px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 16px;    
+}
+
+.boton_Comentario_14
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Comentario_14x14.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 14px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 14px;    
+}
+
+.boton_Traspasar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Traspasar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Crear
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Crear_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Crear_40
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Crear_40x40.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 40px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 40px;    
+}
+
+.boton_portada
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE: url(../imagenes/fondo_boton_portada.gif);
+    BORDER-LEFT: white;
+	font-weight: bold;
+    WIDTH: 120px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px
+}
+
+.boton_normal
+{
+    CURSOR: pointer;
+    WIDTH: 120px;
+    HEIGHT: 18px;
+}
+
+.boton_60
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(fondo_boton_60.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    font-size: 10px;
+    WIDTH: 60px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px;
+}
+
+.boton_70
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/fondo_boton_70.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    font-size: 10px;
+    WIDTH: 70px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px;
+}
+
+.boton_120
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(fondo_boton_120.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    font-size: 10px;
+    WIDTH: 120px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px
+}
+
+.boton_140
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(fondo_boton_140.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    font-size: 10px;
+    WIDTH: 140px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px
+}
+
+.input_text_disabled
+{
+	background-color: #EEEEEE;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #999999;
+}
+
+.input_text_enabled
+{
+	background-color: #FFFFFF;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #999999;
+}
+
+.text_readonly
+{
+    BACKGROUND-COLOR: #eeeeee
+}
+.div_ventana
+{
+    background-color: #FFFFFF;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #848284;
+}
+INPUT
+{
+    BORDER: #dddddd 1px solid;
+    FONT-SIZE: 10px;
+    height: 16px;
+}
+TEXTAREA
+{
+	BORDER: #dddddd 1px solid;
+	FONT-SIZE: 12px;
+}
+
+.msg_accion
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+	/*BACKGROUND-COLOR: #cc0000;*/
+    BACKGROUND-COLOR: #FFFFCC;
+}
+#texto_18
+{
+    FONT-SIZE: 18px
+}
+
+#texto_16
+{
+    FONT-SIZE: 16px
+}
+
+#texto_14
+{
+    FONT-SIZE: 14px
+}
+#texto_12
+{
+    FONT-SIZE: 12px
+}
+#texto_11
+{
+    FONT-SIZE: 11px
+}
+#texto_10
+{
+    FONT-SIZE: 10px
+}
+#texto_9
+{
+    FONT-SIZE: 10px
+}
+#texto_8
+{
+    FONT-SIZE: 8px
+}
+#texto_7
+{
+    FONT-SIZE: 7px
+}
+#texto_3
+{
+    FONT-SIZE: 3px
+}
+#texto_2
+{
+    FONT-SIZE: 2px
+}
+#texto_1
+{
+    FONT-SIZE: 1px
+}
+#table_enc
+{
+    BORDER-COLOR: #206A47;
+    BORDER-STYLE: solid;
+    BORDER-WIDTH: 1px;
+}
+
+#table_enc_new
+{
+    BORDER-COLOR: #444444;
+    BORDER-STYLE: solid;
+    BORDER-WIDTH: 1px;
+}
+
+#table_ext_grid
+{
+    BORDER-RIGHT: #EEEEEE 1px solid;
+    BORDER-TOP: #EEEEEE 1px solid;
+    BORDER-LEFT: #EEEEEE 1px solid;
+    BORDER-BOTTOM: #EEEEEE 1px solid
+}
+
+#text_FILE
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: #666 1px solid;
+    FONT-SIZE: 12px;
+    BACKGROUND-IMAGE: url(../imagenes/fondo_boton_70.gif);
+    BORDER-LEFT: 0px;
+    WIDTH: 1px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: #666 1px solid;
+    HEIGHT: 22px
+}
+SELECT
+{
+    FONT-SIZE: 10px
+}
+
+#lista_TD{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 10px;
+	font-size: 10px;
+	text-decoration: none;
+	border-left: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+#lista_TH{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	font-size:11px;
+	font-weight: bold;
+	float: none;
+	text-decoration: none;
+	border-right: solid 1px;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+	border-color: #CCC;
+	color: #FFFFFF;
+	background-color: #669999;
+}
+
+
+#mes_corto_TD{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	font-size:9px;
+	font-weight: bold;
+	float: none;
+	text-decoration: none;
+	border-right: solid 1px;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+	border-color: #CCC;
+	background-color: #EEEEEE;
+}
+.class_mes_corto_TD{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	font-size:9px;
+	font-weight: bold;
+	float: none;
+	text-decoration: none;
+	border-right: solid 1px;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+	border-color: #CCC;
+	background-color: #EEEEEE;
+}
+
+A:link, A:visited, A:active{
+    COLOR: #104A31;
+    font-weight: bolder;
+    TEXT-DECORATION: underline
+}
+
+A:hover
+{
+    COLOR: #892321;
+    font-weight: bolder;
+    TEXT-DECORATION: none
+}
+
+A.Acal1:link, A.Acal1:visited, A.Acal1:active {
+  COLOR: #CC0000;
+  font-weight: bolder;
+  TEXT-DECORATION: underline;
+}
+
+
+A.Acal1:hover {
+  COLOR: #000000;
+  font-weight: bolder;
+  TEXT-DECORATION: none;
+}
+
+A.Acal2:link, A.Acal2:visited, A.Acal2:active {
+  COLOR: #154C35;
+  font-weight: bolder;
+  TEXT-DECORATION: underline;
+}
+
+
+A.Acal2:hover {
+  COLOR: #000000;
+  font-weight: bolder;
+  TEXT-DECORATION: none;
+}
+
+A.Banner:link, A.Banner:visited, A.Banner:active {
+  COLOR: #FFFFFF;
+  font-weight: bolder;
+  TEXT-DECORATION: underline;
+}
+
+
+A.Banner:hover {
+  COLOR: #FFFFFF;
+  font-weight: bolder;
+  TEXT-DECORATION: none;
+}
+
+#grid_TH_1_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	border-color: #CCC;
+	color: #FFFFFF;
+	background-color: #737688;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#grid_TH_1_2{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	border-color: #CCC;
+	color: #FFFFFF;
+	background-color: #154C35;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+} 
+
+#grid_TH_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	border-color: #CCC;
+	color: #000000;
+	background-color: #FFFFCE;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#inf_TH_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	border-color: #CCC;
+	color: #000000;
+	background-color: #FFFFCE;
+	font-size:7px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.grid_TD_1_2{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 12px;
+	font-size:10px;
+	/*text-align:center;*/
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	/*border-bottom: solid 1px #CCC;*/
+}
+
+#grid_TD_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 12px;
+	font-size:10px;
+	/*text-align:center;*/
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+#grid_TD_1_LRB{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 12px;
+	font-size:10px;
+	text-decoration: none;
+	border-left: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+#inf_TD_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 14px;
+	font-size:7px;
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+#inf_TD_2{
+	font-family:Arial;
+	font-size:8px;
+	text-decoration: none;
+}
+#inf_TD_FS_11{
+	font-family:Arial;
+	font-size:9px;
+	height: 12px;
+	text-decoration: none;
+}
+/* font-size:9px equivale a font-size 7 en Excel*/
+#inf_TD_FS_10{
+	font-family:Arial;
+	font-size:24px;
+	height: 14px;
+	text-decoration: none;
+}
+
+/* font-size:9px equivale a font-size 7 en Excel*/
+#inf_TD_FS_9{
+	font-family:Arial;
+	font-size:9px;
+	height: 14px;
+	text-decoration: none;
+}
+/* font-size:8px equivale a font-size 6 en Excel*/
+#inf_TD_FS_8{
+	font-family:Arial;
+	font-size:8px;
+	height: 10px;
+	vertical-align:middle;
+	text-decoration: none;
+}
+
+#inf_TD_FS_7{
+	font-family:Arial;
+	font-size:7px;
+	height: 9px;
+	vertical-align:middle;
+	text-decoration: none;
+}
+
+#grid_TEXT_TH_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	color: #FFFFFF;
+	background-color: #FFFFCE;
+	text-decoration: none;
+	border: 0px;
+	overflow:hidden;
+}
+
+#grid_TEXT_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:10px;
+	height: 12px;
+	color: #000000;
+	float: none;
+	text-align: center;
+	text-decoration: none;
+	background-color: #EEEEEE;
+	border: 0px;
+}
+
+#grillaDatos_1{
+  z-index:1; 
+  overflow: scroll;
+}
+
+#grillaEnc_1{
+  z-index:1;
+  overflow: auto;
+  overflow-x:hidden;
+}
+
+#grid_TH_2{
+
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 12px;
+	font-size:10px;
+	/*text-align:center;*/
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	background-color: #F7BE81;
+	
+	/*font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 20px;
+	/*text-align:center;
+	float: none;
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	color: #000000;
+	background-color: #F7BE81;
+	font-size:10px;
+	font-weight:bold;
+	/*text-align:center;
+	vertical-align:middle;*/
+}
+#grid_TH_3{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	border-color: #CCC;
+	color: #000000;
+	background-color: #FFFFCE;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* Clases para botones (labels) estilo bootstrap*/
+.bot_success
+{
+	background-color:#51A351;
+	color:#FFFFFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.bot_inverse
+{
+	background-color:#626262;
+	color:#FFFFFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.bot_inverse_dark
+{
+	background-color:#282828;
+	color:#FFFFFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.bot_default
+{
+	background-color:#E6E6E6;
+	color:#444444;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+/*******************************************************************/
+.boton_Glyph_Plus_16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Plus_16X16.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 16px;
+    HEIGHT: 16px;    
+}
+
+.boton_Glyph_Plus_14
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Plus_14X14.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 14px;
+    HEIGHT: 14px;    
+}
+
+.boton_Glyph_Plus_11
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Plus_11X11.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 11px;
+    HEIGHT: 11px;    
+}
+/*******************************************************************/
+.boton_Glyph_Trash_20X28
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Trash_20X28.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 20px;
+    HEIGHT: 28px;    
+}
+
+.boton_Glyph_Trash_19X26
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Trash_19X26.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 19px;
+    HEIGHT: 26px;    
+}
+
+.boton_Glyph_Trash_15X20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Trash_15X20.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 15px;
+    HEIGHT: 20px;    
+}
+
+.boton_Glyph_Trash_12X16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Trash_12X16.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 12px;
+    HEIGHT: 16px;    
+}
+
+.boton_Glyph_Trash_11X14
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Trash_11X14.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 11px;
+    HEIGHT: 14px;    
+}
+
+/*******************************************************************/
+.boton_Glyph_Recycle_26X26
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Recycle_26X26.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 26px;
+    HEIGHT: 26px;    
+}
+
+.boton_Glyph_Recycle_20X20
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Recycle_20X20.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 20px;
+    HEIGHT: 20px;    
+}
+
+.boton_Glyph_Recycle_16X16
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Recycle_16X16.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 16px;
+    HEIGHT: 16px;    
+}
+
+.boton_Glyph_Recycle_14X14
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Recycle_14X14.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+	BORDER-BOTTOM: white;
+	CURSOR: pointer;
+    WIDTH: 14px;
+    HEIGHT: 14px;
+}

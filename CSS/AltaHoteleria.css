@@ -1,0 +1,75 @@
+BODY
+{
+}
+.Tituloprincipal
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 48pt;
+    COLOR: firebrick;
+    FONT-FAMILY: 'Trebuchet MS', Roman
+}
+.Sistema
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 18pt;
+    COLOR: firebrick;
+    FONT-STYLE: italic;
+    FONT-FAMILY: Eraser
+}
+.TextoPortada
+{
+    FONT-SIZE: 9pt;
+    COLOR: firebrick
+}
+A.nav:link
+{
+    FONT-SIZE: 12pt;
+    COLOR: #ffcc00;
+    FONT-FAMILY: Haettenschweiler;
+    TEXT-DECORATION: none
+}
+A.nav:visited
+{
+    FONT-SIZE: 12pt;
+    COLOR: #ffcc00;
+    FONT-FAMILY: Haettenschweiler;
+    TEXT-DECORATION: none
+}
+A.nav:hover
+{
+    FONT-SIZE: 12pt;
+    COLOR: #ffcc00;
+    FONT-FAMILY: Haettenschweiler;
+    TEXT-DECORATION: underline
+}
+.Descripcion_interior
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    COLOR: firebrick;
+    FONT-FAMILY: Eraser
+}
+.Titulo_interior
+{
+    FONT-WEIGHT: bold;
+    COLOR: firebrick
+}
+.Texto_interior
+{
+    FONT-SIZE: 9pt;
+    COLOR: black;
+    FONT-FAMILY: Eraser
+}
+.Lista
+{
+    FONT-SIZE: 9pt;
+    COLOR: blue;
+    FONT-FAMILY: eraser
+}
+.Control
+{
+    FONT-SIZE: 12pt;
+    COLOR: blue;
+    FONT-STYLE: oblique;
+    FONT-FAMILY: Eraser
+}

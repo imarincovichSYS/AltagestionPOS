@@ -1,0 +1,240 @@
+<!-- #include file="../../Scripts/Inc/Cache.Inc" -->
+<!-- #include file="../../Scripts/Inc/Fechas.inc" -->
+<!-- #include file="../../Scripts/Inc/Caracteres.inc" -->
+<!-- #include file="../../Scripts/Inc/Montoescrito.Inc" -->
+<%
+	Cache
+
+  Etiqueta = request("Etiqueta")
+  Cantidad = request("cantidad")
+    
+%>
+
+<% Session.LCID = 11274 %>
+
+<html>
+<body>
+
+<table border=1><tr><td>
+<table align=left width=10% border=0>
+<tr>
+<td NOWRAP><font size=1>
+<%
+
+Const adUseClient = 3
+Dim conn1
+conn1 = Session("DataConn_ConnectionString")
+	
+If Etiqueta = "Etiqueta_1" then
+
+  for j=1 to cantidad
+    Puerto1 = "LPT1"
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text1") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text1") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text1") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text1") & "^FS" 
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text1") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text1") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text1") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text1") & "^FS"
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text1") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text1") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text1") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text1") & "^FS"
+    Etiqueta = Etiqueta & "^XZ" 
+    %><br><%
+    'response.write request("text1")
+  next
+ElseIf Etiqueta = "Etiqueta_2" then
+  Puerto1 = "LPT1"
+  for j=1 to cantidad
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text2") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text2") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text2") & "^FS"
+    Etiqueta = Etiqueta & "^XZ" 
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text2") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text2") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text2") & "^FS"
+    Etiqueta = Etiqueta & "^XZ" 
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text2") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text2") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text2") & "^FS"
+    Etiqueta = Etiqueta & "^XZ" 
+    %><br><%
+    'response.write request("text1") + chr(10) + request("text2")
+  next
+ElseIf Etiqueta = "Etiqueta_3" then
+  Puerto1 = "LPT1"
+  for j=1 to cantidad
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text3") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text3") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text3") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text3") & "^FS"
+    Etiqueta = Etiqueta & "^XZ" 
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text3") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text3") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"  
+    %><br><%
+    'response.write request("text1") + chr(10) + request("text2")  + chr(13) + request("text3")
+  next
+ElseIf Etiqueta = "Etiqueta_4" then
+  Puerto1 = "LPT1"
+  for j=1 to cantidad
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text4") & "^FS"
+    Etiqueta = Etiqueta & "^XZ" 
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text4") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text4") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"
+    %><br><%
+    'response.write request("text1") + chr(10) + request("text2")  + chr(13) + request("text3")  + chr(13) + request("text4")
+  next
+ElseIf Etiqueta = "Etiqueta_5" then
+  Puerto1 = "LPT1"
+  for j=1 to cantidad
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text5") & "^FS"
+    Etiqueta = Etiqueta & "^XZ" 
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text5") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text5") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"
+    %><br><%
+    'response.write request("text1") + chr(10) + request("text2")  + chr(13) + request("text3")  + chr(13) + request("text4")  + chr(13) + request("text5")
+  next
+ElseIf Etiqueta = "Etiqueta_6" then
+  Puerto1 = "LPT1"
+  for j=1 to cantidad
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text5") & "^FS"
+    Etiqueta = Etiqueta & "^XZ" 
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text5") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text5") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"
+    %><br><%
+    'response.write request("text1") + chr(10) + request("text2")  + chr(13) + request("text3")  + chr(13) + request("text4")  + chr(13) + request("text5")  + chr(13) + request("text6")
+  next
+ElseIf Etiqueta = "Etiqueta_7" then
+  Puerto1 = "LPT1"
+  for j=1 to cantidad
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text5") & "^FS"
+    Etiqueta = Etiqueta & "^XZ" 
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text5") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"
+        %><br><%
+    Etiqueta = Etiqueta & "^XA^Fo40,40^ARN,195,140^FD" & Request("text1") &  " ^FS"  & _
+    "^Fo500,170^ARN,2,2^FD" & Request("text2") & "^FS" &_  
+    "^FO50,255^A0,30,30^FD" & Request("text3") & "^FS" &_
+    "^FO10,5^BEN,80^FD" & request("text4") & "^FT735,50^BER,50,N" & "^FS"
+    '"^FO570,180^BEN,50,N,N^FD" & request("text5") & "^FS"
+    Etiqueta = Etiqueta & "^XZ"
+    %><br><%
+    'response.write request("text1") + chr(10) + request("text2")  + chr(13) + request("text3")  + chr(13) + request("text4")  + chr(13) + request("text5")  + chr(13) + request("text6")  + chr(13) + request("text7")
+  next
+End If
+%></font>
+</td>
+</tr>
+</table>
+</table></tr></td>
+</body>
+</html>
+
+<OBJECT classid="CLSID:B829BCD0-3892-11D3-A519-0000216ABE11" 
+codebase="../../Impresion/Impresora.CAB#version=2,0,0,1" 
+id=Locales style="LEFT: 0px; TOP: 0px">
+<PARAM NAME="_ExtentX" VALUE="503">
+<PARAM NAME="_ExtentY" VALUE="503">
+</OBJECT>
+
+<Script language="VBScript">
+If Locales.InicioImpresion("<%=Puerto1%>") then
+  Locales.imprimir "<%=Etiqueta%>"
+  Locales.FinImpresion
+end if
+If Locales.InicioImpresion("<%=Puerto3%>") then
+  Locales.imprimir "<%=Etiqueta3%>"
+  Locales.FinImpresion
+end if
+If Locales.InicioImpresion("<%=Puerto2%>") then
+  Locales.imprimir "<%=Etiqueta2%>"
+  Locales.FinImpresion
+End if
+Locales.FinImpresion
+
+</Script>

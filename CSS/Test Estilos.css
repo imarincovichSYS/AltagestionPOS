@@ -1,0 +1,624 @@
+.FuenteTitulosFunciones
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+
+}
+.FuenteEncabezados
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+}
+.FuenteInput
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+}
+.FuenteTextoAvRePagina
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    TEXT-DECORATION: none
+}
+.FuenteCabeceraTabla
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: #99cc99
+}
+.FuenteLineaSeleccionada
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: lightyellow
+}
+.FuenteCabeceraLink
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    TEXT-DECORATION: underline
+}
+.FuenteDetalleTabla
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: #99cccc
+}
+.FuenteDetalleLink
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: blue;
+    FONT-FAMILY: 'MS Sans Serif';
+    TEXT-DECORATION: underline
+}
+.FuenteBotonesLink
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: blue;
+    FONT-FAMILY: 'MS Sans Serif';
+    TEXT-DECORATION: underline
+}
+.FuenteInputMensajes
+{
+    BORDER-TOP-WIDTH: 0px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: yellow;
+    BACKGROUND-COLOR: green
+}
+.FuenteFlechasUpDown
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 20pt;
+    COLOR: blue;
+    FONT-FAMILY: Wingdings;
+    TEXT-DECORATION: none
+}
+.formulario
+{
+    BORDER-RIGHT: #000000 thin ridge;
+    BORDER-TOP: #ffffff thin groove;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #ffffff thin groove;
+    BORDER-BOTTOM: #000000 thin ridge;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: #c0c0c0
+}
+.barratitulo
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #000000;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: #99cc99
+}
+.datos
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: #ffffff
+}
+.DatoOutput
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: lightblue
+}
+.DatoVariableConCaja
+{
+    BORDER-RIGHT: silver 1px inset;
+    BORDER-TOP: darkgray 2px inset;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: darkgray 2px inset;
+    COLOR: black;
+    LINE-HEIGHT: 1.5;
+    BORDER-BOTTOM: silver 1px inset;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: lightblue
+}
+.FuenteAreaMensajes
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: red;
+    FONT-FAMILY: 'MS Sans Serif';
+}
+.DatoOutputNumerico
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: lightblue;
+    TEXT-ALIGN: right
+}
+.FunteInputNumerico
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    TEXT-ALIGN: right
+}
+.DatoOutputError
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: red;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: lightblue;
+    TEXT-ALIGN: center
+}
+.BotonesMozo
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 14pt;
+    WIDTH: 180pt;
+    COLOR: black;
+    LINE-HEIGHT: normal;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: #96be9d;
+    TEXT-ALIGN: center
+}
+.MesasLibres
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    WIDTH: 120pt;
+    COLOR: yellow;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: green;
+    TEXT-ALIGN: center
+}
+.MesasOcupadas
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    WIDTH: 120pt;
+    COLOR: yellow;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: red;
+    TEXT-ALIGN: center
+}
+.Menu1
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: red;
+    TEXT-ALIGN: center
+}
+.Menu2
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: green;
+    TEXT-ALIGN: center
+}
+.MenuSP1
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: red;
+    TEXT-ALIGN: center
+}
+.MenuSP2
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: green;
+    TEXT-ALIGN: center
+}
+.Menu3
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: blue;
+    TEXT-ALIGN: center
+}
+.MenuSP3
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: blue;
+    TEXT-ALIGN: center
+}
+.Menu4
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: yellow;
+    TEXT-ALIGN: center
+}
+.MenuSP4
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: yellow;
+    TEXT-ALIGN: center
+}
+.Menu5
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: #ff3f00;
+    TEXT-ALIGN: center
+}
+.MenuSP5
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: #ff3f00;
+    TEXT-ALIGN: center
+}
+.Menu6
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: #408000;
+    TEXT-ALIGN: center
+}
+.MenuSP6
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: #408000;
+    TEXT-ALIGN: center
+}
+.Menu7
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: #ffe600;
+    TEXT-ALIGN: center
+}
+.MenuSP7
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: #ffe600;
+    TEXT-ALIGN: center
+}
+.Menu8
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: #00cd20;
+    TEXT-ALIGN: center
+}
+.MenuSP8
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: #00cd20;
+    TEXT-ALIGN: center
+}
+.Menu9
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: #3b7fff;
+    TEXT-ALIGN: center
+}
+.MenuSP9
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: #3b7fff;
+    TEXT-ALIGN: center
+}
+.Menu10
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: #ed1818;
+    TEXT-ALIGN: center
+}
+.MenuSP10
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: white;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: #ed1818;
+    TEXT-ALIGN: center
+}
+.Menu11
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: #ffff34;
+    TEXT-ALIGN: center
+}
+.MenuSP11
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: #ffff34;
+    TEXT-ALIGN: center
+}
+.Menu12
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 45pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 45pt;
+    BACKGROUND-COLOR: #ff8600;
+    TEXT-ALIGN: center
+}
+.MenuSP12
+{
+    BORDER-RIGHT: #cfddce 1px solid;
+    BORDER-TOP: #cfddce 1px solid;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #cfddce 1px solid;
+    WIDTH: 50pt;
+    COLOR: black;
+    BORDER-BOTTOM: #cfddce 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 50pt;
+    BACKGROUND-COLOR: #ff8600;
+    TEXT-ALIGN: center
+}
+.Menu0
+{
+    BORDER-RIGHT: black 1px solid;
+    BORDER-TOP: black 1px solid;
+    FONT-SIZE: 14pt;
+    BORDER-LEFT: black 1px solid;
+    COLOR: white;
+    BORDER-BOTTOM: black 1px solid;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 30pt;
+    BACKGROUND-COLOR: black
+}
+.BotonesMesa
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 20pt
+}
+.Titulomenu
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: medium none;
+    WIDTH: 100pt;
+    COLOR: black;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: 'MS Sans Serif';
+    HEIGHT: 30pt;
+    BACKGROUND-COLOR: transparent
+}
+.oculto
+{
+    CLEAR: both;
+    DISPLAY: none
+}
+.Datooutputgrande
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: black;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: lightblue;
+    TEXT-ALIGN: right
+}
+.Titulomsg
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: medium none;
+    COLOR: red;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: transparent
+}
+.Protestado
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: red
+}
+.Inco
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: medium none;
+    COLOR: white;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: 'MS Sans Serif';
+    BACKGROUND-COLOR: black
+}

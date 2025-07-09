@@ -1,0 +1,6 @@
+ErrorDocument 400 /IssHelp/Common/PaginaError.asp
+ErrorDocument 401 /IssHelp/Common/PaginaError.asp
+ErrorDocument 402 /IssHelp/Common/PaginaError.asp
+ErrorDocument 403 /IssHelp/Common/PaginaError.asp
+ErrorDocument 404 /IssHelp/Common/PaginaError.asp
+ErrorDocument 500 /IssHelp/Common/PaginaError.asp

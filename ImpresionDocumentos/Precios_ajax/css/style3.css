@@ -1,0 +1,149 @@
+/*Relacionado con el menu de cabecera*/
+body{
+	margin-left:0;
+	margin-top:0;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+#boxmenutop{
+	height: 40px;
+	width: auto;    
+	background-color: #444444;
+}
+/*Fin Relacionado con el menu de cabecera*/
+/*Relacionado con el menu del medio*/
+#boxmenumiddle{
+	height: 40px;
+	width: auto;
+	background-color: #444444;
+	font-weight: bold;
+	PADDING-TOP: 2px;
+	text-align: center;
+}
+#areaetiqueta{
+	margin-top: 0px;
+	background-color: #FFFFFF;
+	height: 400px;
+}
+#menuchico{
+	height: 34px;
+	width: auto;
+	background-color: #444444;
+}
+#tablemenu{
+	padding-right: 560px;
+	padding-top: 3px;
+}
+#ubicacionckeditor{
+	padding-top: 10px;
+}
+.table_cabecera td{
+	font-size:10px;
+	font-family:Arial;
+	font-weight: normal;
+	background-color:#444444;
+	color:#FFFFFF;
+}
+.table_detalle td{
+	font-size:10px;
+	font-family:Arial;
+	font-weight:normal;
+	background-color:#BBBBBB;
+	cursor: pointer;
+	color:#444444;/*Color de las letras*/
+}
+/*INICIO Boton Verde IMPRIMIR*/
+input[type="button"]#bot_imprimir{
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;            
+	background: url(../images/printerw.png) no-repeat left #51a451;
+	background-size: 16px 16px;
+	color:#f7f7f9;
+	height: 20px;
+	padding: 1px 1px 15px 20px; 
+	border: 1px solid #336600;
+	font-size: 12px;
+	text-align: right;
+	font-weight: bold;
+	cursor: pointer;       
+}
+input[type="button"]#bot_imprimir{
+	transition: all 0.2s linear;  
+	-moz-transition: all 0.2s linear;  
+	-webkit-transition: all 0.2s linear;  
+}
+input[type="button"]#bot_imprimir:hover{
+	text-align: right;
+	background: url(../images/printerw.png) no-repeat left #61c361;
+	background-size: 16px 16px;
+	border-color:#52A552;
+	color:#FFFFFF;
+	height: 20px;
+	font-weight: bold;
+}
+/*FIN Boton Verde IMPRMIR*/
+
+/*INICIO Boton Verde SUCCESS*/
+input[type="button"]#bot_success{
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;            
+	background: url(../images/check_20X16.png) no-repeat left #51a451;
+	background-size: 16px 16px;
+	color:#f7f7f9;
+	height: 20px;
+	padding: 1px 1px 15px 20px; 
+	border: 1px solid #336600;
+	font-size: 12px;
+	text-align: right;
+	font-weight: bold;
+	cursor: pointer;       
+}
+input[type="button"]#bot_success{
+	transition: all 0.2s linear;  
+	-moz-transition: all 0.2s linear;  
+	-webkit-transition: all 0.2s linear;  
+}
+input[type="button"]#bot_success:hover{
+	text-align: right;
+	background: url(../images/check_20X16.png) no-repeat left #61c361;
+	background-size: 16px 16px;
+	border-color:#52A552;
+	color:#f7f7f9;
+	height: 20px;
+	font-weight: bold;
+}
+/*FIN Boton SUCCESS*/
+
+/*INICIO Boton Rojo DANGER*/
+input[type="button"]#bot_danger{
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;            
+	background: url(../images/delete.png) no-repeat left #be3730;
+	background-size: 16px 16px;
+	color:#f7f7f9;
+	height: 20px;
+	padding: 1px 1px 15px 20px; 
+	border: 1px solid #c44741;
+	font-size: 12px;
+	text-align: right;
+	font-weight: bold;
+	cursor: pointer;       
+}
+input[type="button"]#bot_danger{
+	transition: all 0.2s linear;  
+	-moz-transition: all 0.2s linear;  
+	-webkit-transition: all 0.2s linear;  
+}
+input[type="button"]#bot_danger:hover{
+	text-align: right;
+	background: url(../images/delete.png) no-repeat left #ec5d59;
+	background-size: 16px 16px;
+	border-color:#c44741;
+	color:#f7f7f9;
+	height: 20px;
+	font-weight: bold;
+}
+/*FIN Boton DANGER*/

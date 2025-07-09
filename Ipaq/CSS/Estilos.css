@@ -1,0 +1,236 @@
+.barratitulo
+{    
+    FONT-SIZE: small;
+    COLOR: #000000;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial ;
+    BACKGROUND-COLOR: lightyellow;
+}
+.datos
+{    
+    FONT-SIZE: small;
+    COLOR: #000000;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial ;
+    BACKGROUND-COLOR: #ffffff
+}
+.formulario
+{
+    BORDER-RIGHT: #000000 thin ridge;
+    BORDER-TOP: #ffffff thin groove;    
+    FONT-SIZE: small;
+    BORDER-LEFT: #ffffff thin groove;
+    BORDER-BOTTOM: #000000 thin ridge;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial ;
+    BACKGROUND-COLOR: #c0c0c0;
+}
+.FuenteTitulos
+{    
+    FONT-SIZE: Large;
+    COLOR: black;    
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial ;
+    TEXT-DECORATION: underline;
+}
+.FuenteTitulosFunciones
+{    
+    FONT-SIZE: medium;
+    COLOR: #E5ECBA;
+    BACKGROUND-COLOR: #9F1907;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial 
+
+}
+.FuenteEncabezados
+{
+    FONT-SIZE: xx-small;
+    COLOR: black;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+}
+.FuenteInputInverso
+{
+    FONT-SIZE: xx-small;
+    COLOR: white;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+}
+.FuenteInput
+{
+    FONT-SIZE: xx-small;
+    COLOR: black;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+}
+.FuenteTextoAvRePagina
+{
+    FONT-SIZE: xx-small;
+    COLOR: black;
+    FONT-FAMILY: sans-serif;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+}
+.FuenteCabeceraTabla
+{
+    FONT-SIZE: xx-small;
+    COLOR: white;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    BACKGROUND-COLOR: #9F1907;
+}
+.FuenteDetalleTabla
+{
+    FONT-SIZE: xx-small;
+    COLOR: black;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    BACKGROUND-COLOR: #E5ECBA;
+}
+.FuenteLineaSeleccionada
+{
+    FONT-SIZE: xx-small;
+    COLOR: #13694E;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    BACKGROUND-COLOR: #FAFFDC;
+}
+.FuenteLineaNoSeleccionada
+{
+    FONT-SIZE: xx-small;
+    COLOR: #13694E;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    BACKGROUND-COLOR: #E5ECBA;
+}
+.FuenteCabeceraLink
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    TEXT-DECORATION: underline
+}
+.FuenteDetalleLink
+{
+    FONT-SIZE: xx-small;
+    COLOR: #13694E;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    TEXT-DECORATION: underline;
+}
+.FuenteInputEtiquetas
+{
+    FONT-SIZE: xx-small;
+    COLOR: #13694E;
+    BACKGROUND-COLOR: #E5ECBA;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+}
+.FuenteInputEtiquetasDatos
+{
+    FONT-SIZE: x-small;
+    COLOR: #13694E;
+    BACKGROUND-COLOR: #E5ECBA;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+}
+.DatoOutput
+{    
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    COLOR: black;
+    BACKGROUND-COLOR: #d5c484;
+}
+.DatoVariableConCaja
+{
+    BORDER-RIGHT: silver 1px inset;
+    BORDER-TOP: darkgray 2px inset;    
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: darkgray 2px inset;
+    LINE-HEIGHT: 1.5;
+    BORDER-BOTTOM: silver 1px inset;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    COLOR: black;
+    BACKGROUND-COLOR: #d5c484;
+}
+.DatoOutputNumerico
+{
+    
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    COLOR: black;
+    BACKGROUND-COLOR: #d5c484;
+    TEXT-ALIGN: right
+}
+.FunteInputNumerico
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    TEXT-ALIGN: right
+}
+.DatoOutputError
+{    
+    FONT-SIZE: 8pt;
+    COLOR: red;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    BACKGROUND-COLOR: #d5c484;
+    TEXT-ALIGN: center
+}
+.FuenteBotones
+{
+    FONT-SIZE: 8pt;
+    WIDTH: 45pt;
+    COLOR: yellow;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    BACKGROUND-COLOR: navy;
+}
+.FuenteBotonesLink
+{
+    
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    TEXT-DECORATION: underline
+}
+.Titulomenu
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: medium none;
+    WIDTH: 100pt;
+    COLOR: black;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    HEIGHT: 30pt;
+    BACKGROUND-COLOR: transparent
+}
+.oculto
+{
+    CLEAR: both;
+    DISPLAY: none
+}
+.Titulomsg
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;   
+    BORDER-LEFT: medium none;
+    COLOR: red;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+    BACKGROUND-COLOR: transparent
+}
+.FuenteInputChica
+{
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: sans-serif, Copperplate Gothic Light, Verdana, Helvetica, Arial;
+}
+.FuenteTitulosFunciones_VOUCHER
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15pt;
+    COLOR: black;
+    FONT-FAMILY: 'Courier New';
+}
+.FuenteEncabezados_VOUCHER
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: 'Courier New';
+    BORDER-WIDTH: 1;
+}
+.FuenteInput_VOUCHER
+{
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: 'Courier New';
+    BORDER-WIDTH: 1;
+}

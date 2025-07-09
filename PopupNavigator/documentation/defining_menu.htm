@@ -1,0 +1,170 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PopupNavigator: Defining Menu</title>
+</head>
+
+<body>
+
+<h1><font face="Arial">Defining Menu</font></h1>
+
+<h2><font face="Arial">Menu Structure (NAME)</font></h2>
+
+<p><font face="Arial">Every menu item has its own &lt;PARAM> tag with NAME formatted
+as semicolon-delimited list of integer coordinates. First level of menu items have only one coordinate, showing their position within main menu. Submenu
+items have left part of coordinate list same as their super-menu. The remaining coordinate is their position within submenu. Coordinates start
+from 0. Example:</font></p>
+
+<p><font face="Courier New">0<br>
+  1<br>
+&nbsp; 1;0<br>
+&nbsp; 1;1<br>
+  2<br>
+&nbsp; 2;0<br>
+&nbsp; 2;1<br>
+&nbsp;&nbsp;&nbsp; 2;1;0<br>
+&nbsp;&nbsp;&nbsp; 2;1;1<br>
+&nbsp;&nbsp;&nbsp; 2;1;2<br>
+&nbsp; 2;2<br>
+  3</font></p>
+
+<p><font face="Arial">Indentation represents sub-menu level. Note: It's not necessary to physically place &lt;PARAMS> in logical menu-definition order, but it's a good
+practice.</font></p>
+
+<h2><font face="Arial">Menu Item Definition (VALUE)</font></h2>
+<p><font face="Arial">Every menu item is represented by single parameter within
+APPLET tag. The structure of VALUE differs depending on whether menu item is
+non-leaf (has sub-menu) or leaf.</font></p>
+<ol>
+  <li><font face="Arial">If there is a submenu - then &lt;URL> and &lt;Frame> doesn't make sense:<br>
+    <br>
+    </font><font face="Courier New">VALUE="<a href="subparameters.htm#Label">&lt;Label&gt;</a>;<a href="subparameters.htm#FontName">&lt;FontName&gt;</a>;<a href="subparameters.htm#FontStyle">&lt;FontStyle&gt;</a>;<a href="subparameters.htm#FontSize">&lt;FontSize&gt;</a>&quot;<br>
+    </font><font face="Arial"><br>
+    </font></li>
+  <li><font face="Arial">If this is the menu leaf (no submenu):<br>
+    <br>
+    </font><font face="Courier New">VALUE="<a href="subparameters.htm#Label">&lt;Label&gt;</a>;<a href="subparameters.htm#URL">&lt;URL&gt;</a>;<a href="subparameters.htm#Frame">&lt;Frame&gt;</a>;<a href="subparameters.htm#FontName">&lt;FontName&gt;</a>;<a href="subparameters.htm#FontStyle">&lt;FontStyle&gt;</a>;<a href="subparameters.htm#FontSize">&lt;FontSize&gt;</a>&quot;</font></li>
+</ol>
+<p><font face="Courier New">DEFAULT:<br>
+&nbsp; &lt;Label>=&lt;URL>  (for menu leaf)<br>
+&nbsp; &lt;Frame&gt;=<a href="parameter_defaultframe.htm">DefaultFrame</a><br>
+&nbsp; &lt;FontName&gt;=<a href="parameter_defaultfontname.htm">DefaultFontName</a><br>
+&nbsp; &lt;FontStyle&gt;=<a href="parameter_defaultfontstyle.htm">DefaultFontStyle</a><br>
+&nbsp; &lt;FontSize&gt;=<a href="parameter_defaultfontsize.htm">DefaultFontSize</a></font></p>
+<h2><font face="Arial">Examples</font></h2>
+<h3><font face="Arial">Hierarchy</font></h3>
+
+<p><font face="Arial">Menu with 4 levels of sub-menus.</font></p>
+
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Sub-Menu">
+  <param name="1;0" value="Test Page 1;test1.htm">
+  <param name="1;1" value="Sub-Menu">
+  <param name="1;1;0" value="Test Page 2;test2.htm">
+  <param name="1;1;1" value="Sub-Menu">
+  <param name="1;1;1;0" value="Test Page 3;test3.htm">
+  <param name="1;1;1;1" value="Sub-Menu">
+  <param name="1;1;1;1;0" value="Test Page 4;test4.htm">
+PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000"><b><u>&quot;0&quot;</u></b></font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000"><b><u>&quot;1&quot;</u></b></font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Sub-Menu&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000"><b><u>&quot;1;0&quot;</u></b></font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000"><b><u>&quot;1;1&quot;</u></b></font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Sub-Menu&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000"><b><u>&quot;1;1;0&quot;</u></b></font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000"><b><u>&quot;1;1;1&quot;</u></b></font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Sub-Menu&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000"><b><u>&quot;1;1;1;0&quot;</u></b></font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 3;test3.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000"><b><u>&quot;1;1;1;1&quot;</u></b></font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Sub-Menu&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000"><b><u>&quot;1;1;1;1;0&quot;</u></b></font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 4;test4.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<h3><font face="Arial">Fonts and frames</font></h3>
+
+<p><font face="Arial">Display menu items in different fonts. One menu item opens
+a new window.</font></p>
+
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1 (SansSerif-PLAIN-14);test1.htm;;SansSerif;;14">
+  <param name="2" value="Test Page 1 (SansSerif-ITALIC-14);test1.htm;;SansSerif;ITALIC;14">
+  <param name="3" value="Test Page 1 (SansSerif-BOLD-14);test1.htm;;SansSerif;BOLD;14">
+  <param name="4" value="Test Page 1 (SansSerif-BOLDITALIC-14);test1.htm;;SansSerif;BOLDITALIC;14">
+  <param name="5" value="Test Page 2 (TimesRoman-PLAIN-20);test2.htm;;TimesRoman;;20">
+  <param name="6" value="Submenu (Helvetica-PLAIN-24);Helvetica;;24">
+  <param name="6;0" value="Test Page 3 (ITALIC);test3.htm;;;ITALIC">
+  <param name="6;1" value="Test Page 4 - New Window;test4.htm;_blank">
+PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param<br>
+&nbsp; name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param<br>
+&nbsp; name=</font><font COLOR="#000000">&quot;1&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; value=</font><font COLOR="#000000">&quot;Test Page 1
+(SansSerif-PLAIN-14);test1.htm;;SansSerif;;14&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param<br>
+&nbsp; name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; value=</font><font COLOR="#000000">&quot;Test Page 1
+(SansSerif-ITALIC-14);test1.htm;;SansSerif;ITALIC;14&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param<br>
+&nbsp; name=</font><font COLOR="#000000">&quot;3&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; value=</font><font COLOR="#000000">&quot;Test Page 1
+(SansSerif-BOLD-14);test1.htm;;SansSerif;BOLD;14&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param<br>
+&nbsp; name=</font><font COLOR="#000000">&quot;4&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; value=</font><font COLOR="#000000">&quot;Test Page 1
+(SansSerif-BOLDITALIC-14);test1.htm;;SansSerif;BOLDITALIC;14&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param<br>
+&nbsp; name=</font><font COLOR="#000000">&quot;5&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; value=</font><font COLOR="#000000">&quot;Test Page 2
+(TimesRoman-PLAIN-20);test2.htm;;TimesRoman;;20&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param<br>
+&nbsp; name=</font><font COLOR="#000000">&quot;6&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; value=</font><font COLOR="#000000">&quot;Submenu
+(Helvetica-PLAIN-24);Helvetica;;24&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param<br>
+&nbsp; name=</font><font COLOR="#000000">&quot;6;0&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; value=</font><font COLOR="#000000">&quot;Test Page 3
+(ITALIC);test3.htm;;;ITALIC&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param<br>
+&nbsp; name=</font><font COLOR="#000000">&quot;6;1&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; value=</font><font COLOR="#000000">&quot;Test Page 4 - New
+Window;test4.htm;_blank&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<p>&nbsp;</p>
+<p><a href="index.htm"><font face="Arial"><i>PopupNavigator Reference Home</i></font></a></p>
+
+</body>
+
+</html>

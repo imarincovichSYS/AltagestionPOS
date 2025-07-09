@@ -1,0 +1,136 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PopupNavigator: Selection Parameter</title>
+</head>
+
+<body>
+
+<h1><font face="Arial">Selection Parameter</font></h1>
+
+<p><font face="Arial">Determines how to distinguish (highlight) item that we clicked last
+- this is currently loaded page. When this parameter is not set, default distinguishing
+occurs. Distinguishing occurs in these points:</font></p>
+<ol>
+  <li><font face="Arial">When applet loads, distinguishes item if item's URL is same
+    as URL of document in which applet resides. This covers cases of plain HTML pages or MS shared borders (meaning applet
+    reloads after each selection).</font></li>
+  <li><font face="Arial">Distinguishes item after user selects it. Suitable for frames,
+    when applet is in one frame and selected page is in another (meaning applet doesn't reload after selection).</font></li>
+</ol>
+<p><font face="Arial">  This guarantees selection distinguishing will work correctly
+in all cases. Unfortunately this feature doesn't work in IE5 frames. I'm still investigating...</font></p>
+<h2><font face="Arial">Format</font></h2>
+<p><font face="Courier New">VALUE="&lt;SelectionMode&gt;;<a href="subparameters.htm#FontName">&lt;FontName&gt;</a>;<a href="subparameters.htm#FontStyle">&lt;FontStyle&gt;</a>;<a href="subparameters.htm#FontSize">&lt;FontSize&gt;</a>&quot;<br>
+DEFAULT:<br>
+&nbsp; &lt;SelectionMode>="RECURSIVE"<br>
+&nbsp; &lt;FontStyle&gt;=&quot;BOLD&quot;</font></p>
+<p><font face="Arial"><b>&lt;<a name="SelectionMode">SelectionMode</a>&gt;</b>
+can have one of the following values:</font></p>
+
+<ul>
+  <li><font face="Arial">&quot;NONE&quot; = no distinguishing of the selected
+    item.</font></li>
+  <li><font face="Arial">&quot;ITEM&quot; = distinguish selected item only.</font></li>
+  <li><font face="Arial">&quot;RECURSIVE&quot; = distinguish selected item and all of it's
+super-menus.</font></li>
+</ul>
+<h2><font face="Arial">Examples</font></h2>
+<h3><font face="Arial">Recursive distinguishing.</font></h3>
+<p><font face="Arial">Item that corresponds to this page is in
+Courier-BOLDITAILC-16 font. Note that item's parent is also displayed in this
+font.</font></p>
+
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Selection" value="RECURSIVE;Courier;BOLDITALIC;16">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Parent Item">
+  <param name="1;0" value="This Page;parameter_selection.htm">
+PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;Selection&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;RECURSIVE;Courier;BOLDITALIC;16&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Parent Item&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;This Page;parameter_selection.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+<font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed</font><br>
+&lt;/applet&gt;</font></font></p>
+
+<h3><font face="Arial">Item (non-recursive) distinguishing</font></h3>
+
+<p><font face="Arial">Same as above, but parent is not highlighted.</font></p>
+
+<p><applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Selection" value="ITEM;Courier;BOLDITALIC;16">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Parent Item">
+  <param name="1;0" value="This Page;parameter_selection.htm">
+PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+</p>
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;Selection&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;ITEM;Courier;BOLDITALIC;16&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Parent Item&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;This Page;parameter_selection.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+<h3><font face="Arial">No distinguishing</font></h3>
+<p><font face="Arial">In this case, display of selected item is not different of
+other items.</font></p>
+
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Selection" value="NONE">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Parent Item">
+  <param name="1;0" value="This Page;parameter_selection.htm">
+PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;Selection&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;NONE&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Parent Item&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;This Page;parameter_selection.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<p>&nbsp;</p>
+
+<p><a href="index.htm"><font face="Arial"><i>PopupNavigator Reference Home</i></font></a></p>
+
+</body>
+
+</html>

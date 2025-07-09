@@ -1,0 +1,162 @@
+<%@ Language=VBScript %>
+<!--#include file="../../_private/config.asp" -->
+<!--#include file="../../_private/funciones_generales.asp" -->
+<%
+'*********** Especifica la codificación y evita usar caché **********
+Response.AddHeader "Content-Type", "text/html; charset=iso-8859-1"
+Response.AddHeader "Cache-Control", "no-cache, must-revalidate"
+
+busqueda_aprox      = Request.Form("busqueda_aprox")
+documento_respaldo  = Request.Form("documento_respaldo")
+mes                 = Request.Form("mes")
+anio                = Request.Form("anio")
+num_carpeta         = Request.Form("num_carpeta")
+
+if num_carpeta <> "" then 
+  strWhere = " and CAR.num_carpeta="&num_carpeta&" "
+  if busqueda_aprox = "1" then strWhere = " and CAR.num_carpeta like '%"&num_carpeta&"%' "
+end if  
+    
+OpenConn
+'on error resume next
+set ObjDict_ORIGENES = Server.CreateObject("Scripting.Dictionary")
+Cargar_Diccionario ObjDict_ORIGENES,"select id_origen value, n_origen text from tb_origenes order by value"
+set ObjDict_TRANSPORTES = Server.CreateObject("Scripting.Dictionary")
+Cargar_Diccionario ObjDict_TRANSPORTES,"select id_transporte value, n_transporte text from tb_transportes order by value"
+set ObjDict_EMBARCADORES = Server.CreateObject("Scripting.Dictionary")
+Cargar_Diccionario ObjDict_EMBARCADORES,"select id_embarcador value, n_embarcador text from tb_embarcadores order by value"
+
+
+fec_anio_mes = anio & "/" & mes & "/1"
+IF documento_respaldo = "TU" THEN
+  strSQL = "select num_carpeta, id_embarcador, id_transporte, id_origen, fecha_salida, fecha_llegada,manifiesto, " &_
+           "rcp = (SELECT COUNT(NUMERO_DOCUMENTO_RESPALDO) " &_
+  		        "FROM DOCUMENTOS_NO_VALORIZADOS " &_
+  		        "WHERE EMPRESA='SYS' AND documento_no_valorizado='RCP' AND CONVERT(VARCHAR(6),FECHA_RECEPCION,112) = CONVERT(VARCHAR(6),anio_mes,112) AND CONVERT(VARCHAR(6),FECHA_EMISION,112) = CONVERT(VARCHAR(6),anio_mes,112) " &_
+  		        "AND Documento_respaldo = '"&documento_respaldo&"' " &_
+  		        "AND substring(Carpeta,11,2) = CAR.num_carpeta), " &_
+           "tcp = (SELECT COUNT(NUMERO_DOCUMENTO_RESPALDO) " &_
+  		        "FROM DOCUMENTOS_NO_VALORIZADOS " &_
+  		        "WHERE EMPRESA='SYS' AND documento_no_valorizado='TCP' AND CONVERT(VARCHAR(6),FECHA_RECEPCION,112) = CONVERT(VARCHAR(6),anio_mes,112) AND CONVERT(VARCHAR(6),FECHA_EMISION,112) = CONVERT(VARCHAR(6),anio_mes,112) " &_
+  		        "AND Documento_respaldo = '"&documento_respaldo&"' " &_
+  		        "AND substring(Carpeta,11,2) = CAR.num_carpeta) " &_		        
+           "from carpetas_final CAR where CAR.documento_respaldo='"&documento_respaldo&"' and " &_
+           "CAR.anio_mes = '"&fec_anio_mes&"' "&strWhere&" " &_
+           "order by CAR.num_carpeta"  
+ELSE
+  strSQL = "select num_carpeta, id_embarcador, id_transporte, id_origen, fecha_salida, fecha_llegada,manifiesto, " &_
+           "rcp = (SELECT COUNT(NUMERO_DOCUMENTO_RESPALDO) " &_
+  		        "FROM DOCUMENTOS_NO_VALORIZADOS " &_
+  		        "WHERE EMPRESA='SYS' AND documento_no_valorizado='RCP' AND CONVERT(VARCHAR(6),FECHA_RECEPCION,112) = CONVERT(VARCHAR(6),anio_mes,112) AND CONVERT(VARCHAR(6),FECHA_EMISION,112) = CONVERT(VARCHAR(6),anio_mes,112) " &_
+  		        "AND Documento_respaldo = '"&documento_respaldo&"' " &_
+  		        "AND substring(Carpeta,10,2) = CAR.num_carpeta), " &_
+           "tcp = (SELECT COUNT(NUMERO_DOCUMENTO_RESPALDO) " &_
+  		        "FROM DOCUMENTOS_NO_VALORIZADOS " &_
+  		        "WHERE EMPRESA='SYS' AND documento_no_valorizado='TCP' AND CONVERT(VARCHAR(6),FECHA_RECEPCION,112) = CONVERT(VARCHAR(6),anio_mes,112) AND CONVERT(VARCHAR(6),FECHA_EMISION,112) = CONVERT(VARCHAR(6),anio_mes,112) " &_
+  		        "AND Documento_respaldo = '"&documento_respaldo&"' " &_
+  		        "AND substring(Carpeta,10,2) = CAR.num_carpeta) " &_           		        
+           "from carpetas_final CAR where CAR.documento_respaldo='"&documento_respaldo&"' and " &_
+           "CAR.anio_mes = '"&fec_anio_mes&"' "&strWhere&" " &_
+           "order by CAR.num_carpeta"
+END IF
+'Response.Write strSQL
+'Response.End
+set rs = Conn.Execute(strSQL)
+
+if not rs.EOF then
+  width = "900"
+  %>
+  <table width="100%" align="center" cellpadding=0 cellspacing=0 border=0>
+  <tr>
+    <td>
+    <div name="capaEncListaCarpeta" id="capaEncListaCarpeta" style="width: <%=width%>px; border-left: 1px solid #CCC; border-top: 1px solid #CCC; border-right: 1px solid #CCC; overflow: auto; overflow-x:hidden;">
+    <table style="width:<%=width-19%>px;" border=0 cellpadding=0 cellspacing=0">
+    <tr valign="top" height="30">
+      <td style="width:15px;" id='grid_TH_1'>&nbsp;</td>
+      <td style="width:60px;" id='grid_TH_1'>N°</td>
+      <td style="width:100px;" id='grid_TH_1'>TRANSPORTE</td>
+      <td style="width:120px;" id='grid_TH_1'>ORIGEN</td>
+      <td style="width:120px;" id='grid_TH_1'>FECHA SALIDA</td>
+      <td style="width:80px;" id='grid_TH_1'>RCP</td>
+      <td style="width:111px;" id='grid_TH_1'>Detalle RCP</td>
+      <td style="width:80px;" id='grid_TH_1'>TCP</td>
+      <td style="width:111px;" id='grid_TH_1'>Detalle TCP</td>
+      <td id='grid_TH_1'>EMBARCADOR</td>
+    </tr>
+    </table>
+    </div>
+    <div align="left" name="capaListaCarpeta" onscroll="capaEncListaCarpeta.scrollLeft=this.scrollLeft;" 
+    style="width:<%=width%>; height: 428px; border-left: 1px solid #CCC; border-bottom: 1px solid #CCC; border-right: 1px solid #CCC; overflow: auto;">
+    <table style="width:<%=width-19%>px;" cellpadding=0 cellspacing=0 border=0>
+    <%
+    fila = 0
+    do while not rs.EOF
+    %>
+    <tr 
+    OnDblClick="Editar_Carpeta()"
+    Onclick="SetChecked_Radio(radio_carpetas,<%=fila%>);"
+    OnMouseOver="SetColor(this,'#E2EDFC','');this.style.cursor='hand'" OnMouseOut="SetColor(this,'','')"  
+    align="center" align="center" id="tr_carpetas_<%=fila%>" name="tr_carpetas_<%=fila%>">
+      <td style="width:15px;" id="grid_TD_1"><input 
+      documento_respaldo  = "<%=documento_respaldo%>"
+      anio                = "<%=anio%>" 
+      mes                 = "<%=mes%>" 
+      num_carpeta         = "<%=rs("num_carpeta")%>" 
+      id_embarcador       = "<%=rs("id_embarcador")%>"
+      id_origen           = "<%=rs("id_origen")%>"
+      id_transporte       = "<%=rs("id_transporte")%>"
+      fecha_salida        = "<%=rs("fecha_salida")%>"
+      fecha_llegada       = "<%=rs("fecha_llegada")%>"
+      manifiesto          = "<%=rs("manifiesto")%>"      
+      
+      id="grid_CHECKBOX" name="radio_carpetas" type="radio" style="width:15px;"></input></td>
+      <td style="width:60px;" id="grid_TD_1"><%=rs("num_carpeta")%></td>
+      <td style="width:100px;" id="grid_TD_1" align="left"><%=ObjDict_TRANSPORTES.Item(trim(rs("id_transporte")))%>&nbsp;</td>
+      <td style="width:120px;" id="grid_TD_1" align="left"><%=ObjDict_ORIGENES.Item(trim(rs("id_origen")))%>&nbsp;</td>
+      <td style="width:120px;" id="grid_TD_1"><%=rs("fecha_salida")%>&nbsp;</td>
+      <td style="width:80px;" id="grid_TD_1"><%=rs("RCP")%>&nbsp;</td>
+      
+      <%
+        srt_carpeta="Select Numero_documento_respaldo, Codigo_postal from DOCUMENTOS_NO_VALORIZADOS dnv, entidades_comerciales ent " &_ 
+                    "where dnv.proveedor = ent.entidad_comercial and dnv.empresa='SYS' and documento_no_valorizado='RCP' and " &_
+                    "carpeta = '" & documento_respaldo & "-" & anio & "-" & mes & "-" & rs("num_carpeta") & "'" &_
+                    "order by Numero_documento_respaldo"     
+        set rs_carpeta = Conn.Execute(srt_carpeta)
+      %>
+      <td style="width:111px;" id="grid_TD_1" >
+        <select id="grid_TD_1" style="width:110px;">
+          <%do while not rs_carpeta.EOF%>
+            <option value="1"> <%=rs_carpeta("Numero_documento_respaldo") & " - " & rs_carpeta("Codigo_postal")%></option> 
+          <%rs_carpeta.MoveNext
+          loop%>           
+        </select>
+      </td>
+  
+      <td style="width:80px;" id="grid_TD_1"><%=rs("TCP")%>&nbsp;</td>
+                 
+      <%
+        srt_carpeta_tcp="Select Numero_documento_respaldo, Codigo_postal from DOCUMENTOS_NO_VALORIZADOS dnv, entidades_comerciales ent " &_ 
+                    "where dnv.proveedor = ent.entidad_comercial and dnv.empresa='SYS' and documento_no_valorizado='TCP' and " &_
+                    "carpeta = '" & documento_respaldo & "-" & anio & "-" & mes & "-" & rs("num_carpeta") & "'" &_
+                    "order by Numero_documento_respaldo"      
+        set rs_carpeta_tcp = Conn.Execute(srt_carpeta_tcp)
+      %>
+      <td style="width:111px;" id="grid_TD_1">
+        <select id="grid_TD_1" style="width:110px;">
+          <%do while not rs_carpeta_tcp.EOF%>
+            <option value="1"> <%=rs_carpeta_tcp("Numero_documento_respaldo")& " - " & rs_carpeta_tcp("Codigo_postal")%></option> 
+          <%rs_carpeta_tcp.MoveNext
+          loop%>           
+        </select>
+      </td>           
+      <td id="grid_TD_1" align="left"><%=ObjDict_EMBARCADORES.Item(trim(rs("id_embarcador")))%>&nbsp;</td>
+    </tr>
+    <%fila = fila + 1
+      rs.MoveNext
+    loop%>
+    </table>
+    </div>
+    </td>
+  </tr>
+  </table>
+<%end if%>

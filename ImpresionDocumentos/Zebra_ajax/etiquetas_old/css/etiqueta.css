@@ -1,0 +1,309 @@
+/*Relacionado con el menu de cabecera*/
+#lienzo_para_dibujar{
+	height: 430px;
+	width: 280px;
+	background-color: gray;
+}
+/*css para newetiquetas.asp*/
+#letra_estaticas{
+	font-family: "arial",Georgia,Serif;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+}
+#lienzoetiqueta{
+	height: 500px;
+	width: 800px;
+	background-color: #666666;
+}
+#lienzoetiqueta2{
+	height: 500px;
+	width: 750px;
+	background-color: #666666;
+}
+#menusuperior{
+	height: auto;
+	width: 800px;
+	background-color: #999999;
+}
+#menulateralizq{
+	height: auto;
+	width: 300px;
+	background-color: #666666;
+	float: left;
+}
+#menulateralder{
+	font-family: "arial",Georgia,Serif;
+	padding-top: 33px;
+	height: auto;
+	width: 500px;
+	background-color: #666666;
+	float: right;
+}
+#texto1{
+	width: 200px;
+}
+#preview{
+	background:-moz-linear-gradient(#0081CC 0%,#0045CC 100%);
+	background:-ms-linear-gradient(#0081CC 0%,#0045CC 100%); 
+	background:-o-linear-gradient(#0081CC 0%,#0045CC 100%); 
+	background:-webkit-linear-gradient(#0081CC 0%,#0045CC 100%); 
+	background:linear-gradient(#0081CC 0%,#0045CC 100%);
+	background: #0081CC;
+	border:solid 1px #0062B8; 
+	border-radius:5px;
+	text-align:center;
+	padding:3px; 
+	color:#FFF; 
+	width:65px; 
+}
+#preview: hover{
+	background:-moz-linear-gradient(#0045CC 0%,#0081CC 100%);
+	background: #0045CC;
+	color:#FFF; 
+}
+#etiqueta3x2{
+	background-image: url('../images/3x2.png');
+	background-repeat:no-repeat;
+	height: 300px;
+}
+.tdbackground{
+	background-color: #333333;
+	color: white;
+	font-family: "arial",Georgia,Serif;
+	font-size:12px;
+	padding-left: 20px;
+}
+.trfontlistar{
+	color: white;
+	font-family: "arial",Georgia,Serif;
+	font-size:12px;
+	cursor:pointer;
+}
+/*fin newetiquetas.asp*/
+#lienzo_para_dibujar_10x5{
+	height: 660px;
+	width: 680px;
+	background-color: gray;
+}
+#texto_grande {
+	border: 3px double #CCCCCC;
+	color: #000000;
+	width: 650px;
+}
+#texto2_grande {
+	border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto3_grande{
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto4_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto5_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto6_grande{
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto7_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto8_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto9_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto10_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto11_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto12_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto13_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto14_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto15_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto16_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto17_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto18_grande {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 650px;
+}
+#texto {
+	border: 3px double #CCCCCC;
+	color: #000000;
+	width: 270px;
+}
+#texto2 {
+	border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto3 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto4 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto5 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto6{
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto7 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto8 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto9 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto10 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto11 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto12 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto13 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto14 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto15 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto16 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto17 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#texto18 {
+border: 3px double #CCCCCC;
+	
+	color: #000000;
+	width: 270px;
+}
+#cantidad{
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 22px;
+	width: 30px;
+	padding-left: 3px; 
+}

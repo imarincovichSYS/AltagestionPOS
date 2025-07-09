@@ -1,0 +1,548 @@
+.seleccionado
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #ccccff;
+    BORDER-WIDTH: 1;
+}
+.normal
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BORDER-WIDTH: 1;
+}
+.pesos
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 34pt;
+    COLOR: #ffff33;
+    BACKGROUND-COLOR: #333333;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BORDER-WIDTH: 1;
+}
+.dolares
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 34pt;
+    COLOR: #00ff33;
+    BACKGROUND-COLOR: #333333;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BORDER-WIDTH: 1;
+}
+.FuenteTitulosFunciones
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif
+}
+.FuenteEncabezados
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BORDER-WIDTH: 1;
+}
+.FuenteInput
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, 'Copperplate Gothic Light', Verdana, Helvetica, sans-serif;
+    BORDER-WIDTH: 1;
+}
+.FuenteTextoAvRePagina
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}
+.FuenteCabeceraTabla
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: lightyellow;
+    BORDER-WIDTH: 1;
+}
+.FuenteLineaSeleccionada
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: lightyellow;
+}
+.FuenteCabeceraLink
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    TEXT-DECORATION: underline;
+}
+.FuenteDetalleTabla
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #c0c0c0;
+}
+.FuenteDetalleLink
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: blue;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    TEXT-DECORATION: underline;
+}
+.FuenteBotonesLink
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    TEXT-DECORATION: underline;
+}
+.FuenteInputMensajes
+{
+    BORDER-TOP-WIDTH: 0px;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}
+A:hover
+{
+    COLOR: black;
+    BACKGROUND-COLOR: lightyellow;
+}
+.FuenteFlechasUpDown
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 20pt;
+    COLOR: black;
+    FONT-FAMILY: Wingdings;
+    TEXT-DECORATION: none;
+}
+.formulario
+{
+    BORDER-RIGHT: #000000 thin ridge;
+    BORDER-TOP: #ffffff thin groove;
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: #ffffff thin groove;
+    BORDER-BOTTOM: #000000 thin ridge;
+    FONT-FAMILY: Arial, Verdana, Helvetica;
+    BACKGROUND-COLOR: #c0c0c0;
+}
+.barratitulo
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana, Helvetica;
+    BACKGROUND-COLOR: lightyellow;
+}
+.datos
+{
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 8pt;
+    COLOR: #000000;
+    FONT-FAMILY: Arial, Verdana, Helvetica;
+    BACKGROUND-COLOR: #ffffff;
+}
+.DatoOutput
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #778899;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #fff5ee;
+    BORDER-WIDTH: 1;
+}
+.DatoVariableConCaja
+{
+    BORDER-RIGHT: silver 1px inset;
+    BORDER-TOP: darkgray 2px inset;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: darkgray 2px inset;
+    COLOR: #778899;
+    LINE-HEIGHT: 1.5;
+    BORDER-BOTTOM: silver 1px inset;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #fff5ee;
+}
+.DatoVariableConCajaTexto
+{
+    BORDER-RIGHT: silver 1px inset;
+    BORDER-TOP: darkgray 2px inset;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: darkgray 2px inset;
+    COLOR: #778899;
+    LINE-HEIGHT: 1.5;
+    BORDER-BOTTOM: silver 1px inset;
+    FONT-FAMILY: 'Courier New',Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #fff5ee;
+}
+.FuenteAreaMensajes
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: red;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: lightyellow;
+}
+.DatoOutputNumerico
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: #778899;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: #fff5ee;
+    TEXT-ALIGN: right;
+    BORDER-WIDTH: 1;
+}
+.FunteInputNumerico
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif;
+    TEXT-ALIGN: right;
+    BORDER-WIDTH: 1;
+}
+.DatoOutputError
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    COLOR: red;
+    FONT-FAMILY: Arial, Verdana, helvetica;
+    BACKGROUND-COLOR: lightyellow;
+    TEXT-ALIGN: center;
+}
+.Titulomenu
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10pt;
+    BORDER-LEFT: medium none;
+    WIDTH: 100pt;
+    COLOR: black;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Arial, Verdana, helvetica;
+    HEIGHT: 30pt;
+    BACKGROUND-COLOR: transparent
+}
+.oculto
+{
+    CLEAR: both;
+    DISPLAY: none
+}
+.Datooutputgrande
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 12pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: lightyellow;
+    TEXT-ALIGN: right
+}
+.Titulomsg
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: medium none;
+    COLOR: red;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Arial, Verdana;
+    BACKGROUND-COLOR: transparent
+}
+.Protestado
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Verdana, 'Microsoft Sans Serif', 'MS Serif';
+    BACKGROUND-COLOR: red
+}
+.Inco
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: medium none;
+    COLOR: black;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Arial, Verdana, 'Microsoft Sans Serif', 'MS Serif';
+    BACKGROUND-COLOR: black
+}
+.FuenteObservaciones
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: medium none;
+    CURSOR: hand;
+    COLOR: black;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Arial, Verdana, 'MS Sans Serif';
+    BACKGROUND-COLOR: blue;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: underline
+}
+.FuenteSinObs
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: medium none;
+    CURSOR: hand;
+    COLOR: blue;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Arial, Verdana, 'MS Sans Serif';
+    BACKGROUND-COLOR: #99cc99;
+    TEXT-ALIGN: center;
+    TEXT-DECORATION: underline
+}
+.Cabeceradicom
+{
+    FONT-SIZE: 6pt;
+    COLOR: black;
+    FONT-FAMILY: 'Arial Black', Verdana, 'Times New Roman';
+}
+.Aclarado
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana, Roman;
+    BACKGROUND-COLOR: #ffff00
+}
+.Moroso
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana, Roman;
+    BACKGROUND-COLOR: #2324d8
+}
+.TablaImpresion
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none;
+    FONT-FAMILY: Arial, Verdana, 'Times New Roman'
+}
+.Nuevo
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana, 'Times New Roman', Roman;
+    BACKGROUND-COLOR: red
+}
+.Usado
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Roman, 'Times New Roman', Verdana;
+    BACKGROUND-COLOR: yellow
+}
+.Fabricar
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, Verdana, 'Times New Roman', Roman;
+    BACKGROUND-COLOR: green
+}
+.DetalleListado
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px;
+    FONT-SIZE: 8pt;
+    BORDER-LEFT: 1px;
+    COLOR: black;
+    BORDER-BOTTOM: 1px;
+    FONT-FAMILY: Arial, Verdana, 'Times New Roman'
+}
+.FuenteEncabezadosListado
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 8pt;
+    FONT-FAMILY: Courier;
+    BACKGROUND-COLOR: #cccccc
+}
+.FuenteListado
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: 'Courier New'
+}
+.Sinbordearriba
+{
+    BORDER-RIGHT: 1px solid;
+    BORDER-TOP: 1px solid;
+    BORDER-LEFT: 1px solid;
+    BORDER-BOTTOM: 1px solid
+}
+.FuenteInputChica
+{
+    FONT-SIZE: 7pt;
+    COLOR: black;
+    FONT-FAMILY: 'Times New Roman'
+}
+.FuenteBalance
+{
+    BORDER-RIGHT: 0.1pt solid;
+    BORDER-TOP: 0.1pt solid;
+    FONT-SIZE: 6pt;
+    BORDER-LEFT: 0.1pt solid;
+    COLOR: black;
+    BORDER-BOTTOM: 0.1pt solid;
+    FONT-FAMILY: 'Times New Roman'
+}
+.SaltoPagina
+{
+    PAGE-BREAK-BEFORE: always;
+}
+.BordeBalance
+{
+    BORDER-RIGHT: 0.1pt solid;
+    BORDER-TOP: 1pt;
+    FONT-SIZE: 6pt;
+    BORDER-LEFT: 0.1pt;
+    COLOR: black;
+    BORDER-BOTTOM: 0.1pt solid;
+    FONT-FAMILY: 'Times New Roman'
+}
+.BotonInverso
+{
+    FONT-SIZE: 8pt;
+    BORDER-LEFT-COLOR: white;
+    BORDER-BOTTOM-COLOR: white;
+    COLOR: black;
+    BORDER-TOP-STYLE: outset;
+    BORDER-TOP-COLOR: white;
+    FONT-FAMILY: Arial, 'Copperplate Gothic Light', Verdana, Helvetica, sans-serif;
+    BORDER-RIGHT-STYLE: outset;
+    BORDER-LEFT-STYLE: outset;
+    BORDER-RIGHT-COLOR: white;
+    BORDER-BOTTOM-STYLE: outset
+}
+.BotonNormal
+{
+    FONT-SIZE: 8pt;
+    BORDER-LEFT-COLOR: white;
+    BORDER-BOTTOM-COLOR: white;
+    COLOR: black;
+    BORDER-TOP-STYLE: inset;
+    BORDER-TOP-COLOR: white;
+    FONT-FAMILY: Arial, 'Copperplate Gothic Light', Verdana, Helvetica, sans-serif;
+    BORDER-RIGHT-STYLE: inset;
+    BORDER-LEFT-STYLE: inset;
+    BORDER-RIGHT-COLOR: white;
+    BORDER-BOTTOM-STYLE: inset
+}
+.minimo
+{
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 1px;
+    BORDER-LEFT: medium none;
+    BORDER-BOTTOM: medium none
+}
+
+.activado
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, 'Copperplate Gothic Light', Verdana, Helvetica, sans-serif    FONT-SIZE: 8pt;
+    BACKGROUND-COLOR: lightyellow;
+}
+.visible
+{
+    FONT-SIZE: 8pt;
+    COLOR: black;
+    FONT-FAMILY: Arial, 'Copperplate Gothic Light', Verdana, Helvetica, sans-serif    FONT-SIZE: 8pt;
+}
+.desactivado
+{
+    FONT-SIZE: 8pt;
+    COLOR: white;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: Silver;
+}
+.FuenteOutputImpresora
+{
+    FONT-SIZE: 8pt;
+    COLOR: Black;
+    FONT-WEIGHT: bold;
+    FONT-FAMILY: Arial, Copperplate Gothic Light, Verdana, Helvetica, sans-serif;
+    BACKGROUND-COLOR: Silver;
+}
+.FuenteTitulosFunciones_VOUCHER
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 15pt;
+    COLOR: black;
+    FONT-FAMILY: 'Courier New';
+}
+.FuenteEncabezados_VOUCHER
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: 'Courier New';
+    BORDER-WIDTH: 1;
+}
+.FuenteInput_VOUCHER
+{
+    FONT-SIZE: 10pt;
+    COLOR: black;
+    FONT-FAMILY: 'Courier New';
+    BORDER-WIDTH: 1;
+}
+
+.PC_FuenteCabeceraTabla
+{
+    FONT-WEIGHT: normal;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-style: normal;
+	text-decoration: none;
+    COLOR: black;
+    BACKGROUND-COLOR: lightyellow;
+}
+.PC_FuenteEncabezados
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 9px;
+    COLOR: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    BORDER-WIDTH: 1;
+}
+.PC_FuenteInput
+{
+    FONT-SIZE: 9px;
+    COLOR: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    BORDER-WIDTH: 1;
+}
+.PC_FuenteTextoAvRePagina
+{
+    FONT-SIZE: 9px;
+    COLOR: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    TEXT-DECORATION: none;
+}

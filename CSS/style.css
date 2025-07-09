@@ -1,0 +1,1152 @@
+BODY
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    FONT-SIZE: 10px;
+    /*BACKGROUND-IMAGE: url(images/tb_fondo_verde_01.jpg);*/
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+}
+TABLE
+{
+    FONT-SIZE: 12px;
+}
+FIELDSET{
+    FONT-SIZE: 12px;
+    border-width: 1px;
+    border-style: solid;
+    /*border-color: #848284;*/
+    border-color: #0A2E64;
+}
+legend{
+	FONT-SIZE: 12px;
+	font-weight: bold;
+	COLOR: #0A2E64;
+}
+.table_inicio
+{
+    BORDER-TOP-WIDTH: 1px;
+    BORDER-LEFT-WIDTH: 1px;
+    FONT-SIZE: 12px;
+    BORDER-BOTTOM-WIDTH: 1px;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BORDER-RIGHT-WIDTH: 1px
+}
+
+.boton_Guardar_bg_DDD
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Guardar_24x24_bg_DDD.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Cancelar_bg_DDD
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cancelar_24x24_bg_DDD.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Guardar_trans
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Guardar_24x24_trans.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Cancelar_trans
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cancelar_24x24_trans.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Preview
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Preview_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Informacion_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Informacion_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Upload
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Upload_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Cancelar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cancelar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Asignar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Asignar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Actualizar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Actualizar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Actualizar2
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Edit_24X21.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 21px;    
+}
+
+.boton_Forward
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Glyph_Forward_21X21.png);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 21px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 21px;    
+}
+
+.boton_Cambiar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Cambiar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Limpiar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Limpiar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Buscar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Buscar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Buscar_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Buscar_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Nuevo_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Nuevo_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Nuevo_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Nuevo_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Editar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Editar_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Editar_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Editar_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Eliminar2
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar2_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Eliminar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Eliminar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Eliminar_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Eliminar_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Atras_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Atras_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Atras_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Atras_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Agregar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Agregar_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+
+.boton_Info_Add_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Info_Add_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Close_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Close_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Check_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Check_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Verificar_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Verificar_24X24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Excel_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Excel_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Excel_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Excel_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Excel_B_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Excel_B_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Excel_B_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Excel_B_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Excel_C_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Excel_C_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Excel_C_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Excel_C_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Email_on
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Email_24x24_on.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Email_off
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Email_24x24_off.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_Traspasar
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/Ico_Traspasar_24x24.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    WIDTH: 24px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 24px;    
+}
+
+.boton_portada
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE: url(../imagenes/fondo_boton_portada.gif);
+    BORDER-LEFT: white;
+	font-weight: bold;
+    WIDTH: 120px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px
+}
+
+.boton_normal
+{
+    CURSOR: pointer;
+	WIDTH: 120px;
+    HEIGHT: 18px;
+}
+
+.boton_60
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(fondo_boton_60.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    font-size: 10px;
+    WIDTH: 60px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px;
+}
+
+.boton_70
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(../imagenes/fondo_boton_70.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    font-size: 10px;
+    WIDTH: 70px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px;
+}
+
+.boton_120
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(fondo_boton_120.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    font-size: 10px;
+    WIDTH: 120px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px
+}
+
+.boton_140
+{
+    BORDER-RIGHT: white;
+    BORDER-TOP: white;
+    BACKGROUND-IMAGE:url(fondo_boton_140.gif);
+    background-color: white;
+    BORDER-LEFT: white;
+    font-weight: bold;
+    font-size: 10px;
+    WIDTH: 140px;
+    CURSOR: pointer;
+    BORDER-BOTTOM: white;
+    HEIGHT: 18px
+}
+
+.text_readonly
+{
+    BACKGROUND-COLOR: #eeeeee
+}
+.div_ventana
+{
+    background-color: #FFFFFF;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #848284;
+}
+INPUT
+{
+    BORDER-RIGHT: #dddddd 1px solid;
+    BORDER-TOP: #dddddd 1px solid;
+    FONT-SIZE: 10px;
+    BORDER-LEFT: #dddddd 1px solid;
+    BORDER-BOTTOM: #dddddd 1px solid;
+    height: 16px;
+}
+
+.msg_accion
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #000000;
+	/*BACKGROUND-COLOR: #cc0000;*/
+    BACKGROUND-COLOR: #FFFFCC;
+}
+#texto_18
+{
+    FONT-SIZE: 18px
+}
+
+#texto_16
+{
+    FONT-SIZE: 16px
+}
+
+#texto_14
+{
+    FONT-SIZE: 14px
+}
+#texto_12
+{
+    FONT-SIZE: 12px
+}
+#texto_11
+{
+    FONT-SIZE: 11px
+}
+#texto_10
+{
+    FONT-SIZE: 10px
+}
+#texto_9
+{
+    FONT-SIZE: 10px
+}
+#texto_8
+{
+    FONT-SIZE: 8px
+}
+#texto_7
+{
+    FONT-SIZE: 7px
+}
+#texto_3
+{
+    FONT-SIZE: 3px
+}
+#texto_2
+{
+    FONT-SIZE: 2px
+}
+#table_enc
+{
+    BORDER-COLOR: #0A2E64;
+    BORDER-STYLE: solid;
+    BORDER-WIDTH: 1px;
+}
+#table_ext_grid
+{
+    BORDER-RIGHT: #EEEEEE 1px solid;
+    BORDER-TOP: #EEEEEE 1px solid;
+    BORDER-LEFT: #EEEEEE 1px solid;
+    BORDER-BOTTOM: #EEEEEE 1px solid
+}
+
+#text_FILE
+{
+    /*BORDER-RIGHT: 0px;*/
+    /*BORDER-TOP: #666 1px solid;*/
+	/*BORDER-LEFT: 0px;*/
+	/*BORDER-BOTTOM: #666 1px solid;*/
+    FONT-SIZE: 11px;
+    /*BACKGROUND-IMAGE: url(../imagenes/fondo_boton_70.gif);*/
+	BORDER: 0px;
+    WIDTH: 74px;
+    CURSOR: pointer;
+    HEIGHT: 20px
+}
+SELECT
+{
+    FONT-SIZE: 10px
+}
+
+#lista_TD{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 10px;
+	font-size: 10px;
+	text-decoration: none;
+	border-left: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+#lista_TH{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	font-size:11px;
+	font-weight: bold;
+	float: none;
+	text-decoration: none;
+	border-right: solid 1px;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+	border-color: #CCC;
+	color: #FFFFFF;
+	background-color: #669999;
+}
+
+
+#mes_corto_TD{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	font-size:9px;
+	font-weight: bold;
+	float: none;
+	text-decoration: none;
+	border-right: solid 1px;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+	border-color: #CCC;
+	background-color: #EEEEEE;
+}
+.class_mes_corto_TD{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	font-size:9px;
+	font-weight: bold;
+	float: none;
+	text-decoration: none;
+	border-right: solid 1px;
+	border-bottom: solid 1px;
+	border-left: solid 1px;
+	border-color: #CCC;
+	background-color: #EEEEEE;
+}
+
+A:link
+{
+    COLOR: #000000;
+	font-weight: bold;
+    TEXT-DECORATION: underline
+}
+A:visited
+{
+    COLOR: #000000;
+	font-weight: bold;
+    TEXT-DECORATION: underline
+}
+A:active
+{
+    COLOR: #000000;
+	font-weight: bold;
+    TEXT-DECORATION: underline
+}
+A:hover
+{
+    COLOR: #FFFFFF;
+	font-weight: bold;
+    TEXT-DECORATION: none
+}
+
+a.linkmenuprincipal:link, a.linkmenuprincipal:visited, a.linkmenuprincipal:active {color:#DDDDDD; font-weight:bold;}
+a.linkmenuprincipal:hover {color:#FFFFFF; font-weight: bold;text-decoration: none;}
+
+#grid_TH_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	border-color: #CCC;
+	color: #FFFFFF;
+	/*background-color: #737688;*/
+	background-color: #666666;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#inf_TH_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	border-color: #CCC;
+	color: #FFFFFF;
+	background-color: #666666;
+	font-size:7px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#grid_TD_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 12px;
+	font-size:10px;
+	/*text-align:center;*/
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+.grid_TD_1_class{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 12px;
+	font-size:10px;
+	/*text-align:center;*/
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+#inf_TD_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 14px;
+	font-size:7px;
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+}
+
+#inf_TD_2{
+	font-family:Arial;
+	font-size:8px;
+	text-decoration: none;
+}
+#inf_TD_FS_11{
+	font-family:Arial;
+	font-size:9px;
+	height: 12px;
+	text-decoration: none;
+}
+/* font-size:9px equivale a font-size 7 en Excel*/
+#inf_TD_FS_10{
+	font-family:Arial;
+	font-size:24px;
+	height: 14px;
+	text-decoration: none;
+}
+
+/* font-size:9px equivale a font-size 7 en Excel*/
+#inf_TD_FS_9{
+	font-family:Arial;
+	font-size:9px;
+	height: 14px;
+	text-decoration: none;
+}
+/* font-size:8px equivale a font-size 6 en Excel*/
+#inf_TD_FS_8{
+	font-family:Arial;
+	font-size:8px;
+	height: 10px;
+	vertical-align:middle;
+	text-decoration: none;
+}
+
+#inf_TD_FS_7{
+	font-family:Arial;
+	font-size:7px;
+	height: 9px;
+	vertical-align:middle;
+	text-decoration: none;
+}
+
+#grid_TEXT_TH_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	color: #FFFFFF;
+	background-color: #737688;
+	text-decoration: none;
+	border: 0px;
+	overflow:hidden;
+}
+
+#grid_TEXT_1{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:10px;
+	height: 12px;
+	color: #000000;
+	float: none;
+	text-align: center;
+	text-decoration: none;
+	background-color: #EEEEEE;
+	border: 0px;
+}
+
+#grillaDatos_1{
+  z-index:1; 
+  overflow: scroll;
+}
+
+#grillaEnc_1{
+  z-index:1;
+  overflow: auto;
+  overflow-x:hidden;
+}
+
+.FormatNumber_7{
+  mso-number-format:'#,##0.0000000';
+}
+
+.FormatNumber_4{
+  mso-number-format:'#,##0.0000';
+}
+
+.FormatNumber_2{
+  mso-number-format:'#,##0.00';
+}
+.FormatNumber_0{
+  mso-number-format:'#,##0';
+}
+#grid_TH_2{
+
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 12px;
+	font-size:10px;
+	/*text-align:center;*/
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	background-color: #F7BE81;
+	
+	/*font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 20px;
+	/*text-align:center;
+	float: none;
+	text-decoration: none;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	color: #000000;
+	background-color: #F7BE81;
+	font-size:10px;
+	font-weight:bold;
+	/*text-align:center;
+	vertical-align:middle;*/
+}
+#grid_TH_3{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	border-color: #CCC;
+	color: #FFFFFF;
+	background-color: #737688;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+textarea {
+   resize: none;
+}
+
+/* Clases para botones (labels) estilo bootstrap (Glyph)*/
+.bot_primary
+{
+	background-color:#3175B5; /*over: #428ACE*/
+	color:#FFFFFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.bot_success
+{
+	background-color:#51A351;
+	color:#FFFFFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.bot_danger
+{
+	background-color:#BD362F;
+	color:#FFFFFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.bot_inverse
+{
+	background-color:#626262;
+	color:#FFFFFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.bot_inverse_dark
+{
+	background-color:#282828;
+	color:#FFFFFF;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}
+
+.bot_default
+{
+	background-color:#E6E6E6;
+	color:#444444;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding: 3px;
+	font-weight: bold;
+}

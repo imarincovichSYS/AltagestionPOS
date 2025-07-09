@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <script language='VBScript'>
+Sub Print()
+       OLECMDID_PRINT = 6
+       OLECMDEXECOPT_DONTPROMPTUSER = 2
+       OLECMDEXECOPT_PROMPTUSER = 1
+       call WB.ExecWB(OLECMDID_PRINT, OLECMDEXECOPT_DONTPROMPTUSER,1)
+End Sub
+document.write "<object ID='WB' WIDTH=0 HEIGHT=0 CLASSID='CLSID:8856F961-340A-11D0-A96B-00C04FD705A2'></object>"
+</script>
+    <script language="javascript">
+            var blnDOM = false, blnIE4 = false, blnNN4 = false;
+
+            if (document.layers) blnNN4 = true;
+            else if (document.all) blnIE4 = true;
+            else if (document.getElementById) blnDOM = true;
+            function getKeycode(e) {
+                var TeclaPresionada = ""
+
+                if (blnNN4) {
+                    var NN4key = e.which
+                    TeclaPresionada = NN4key;
+                }
+                if (blnDOM) {
+                    var blnkey = e.which
+                    TeclaPresionada = blnkey;
+                }
+                if (blnIE4) {
+                    var IE4key = event.keyCode
+                    TeclaPresionada = IE4key
+                }
+
+                //alert(TeclaPresionada)
+                if (TeclaPresionada == 8 && (event.srcElement.type != "text" && event.srcElement.type != "textarea")) //Backspace
+                {
+                    return false;
+                }
+
+
+            }
+
+            document.onkeydown = getKeycode
+            if (blnNN4) document.captureEvents(Event.KEYDOWN)
+
+            function imprimir(){
+                window.print()
+                window.close()
+            }
+
+            document.oncontextmenu = function() {
+                return false
+            }
+
+    </script>
+
+        <div class="ticket">
+            <p class="centrado">TICKET DE VENTA<br>New New York<br>17/10/2017
+                02:22 a.m.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>CANT</th>
+                        <th>PRODUCTO</th>
+                        <th>$$</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.00</td>
+                        <td>CHEETOS VERDES 80 G</td>
+                        <td>$8.50</td>
+                    </tr>
+                    <tr>
+                        <td>2.00</td>
+                        <td>KINDER DELICE</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>1.00</td>
+                        <td>COCA COLA 600 ML</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>TOTAL</td>
+                        <td>$28.50</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="centrado">GRACIAS POR SU COMPRA!</p>
+        </div>
+        <button class="oculto-impresion" onclick="imprimir()">Imprimir</button>
+    </body>
+</html>

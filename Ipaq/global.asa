@@ -1,0 +1,15 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+	Sub Session_OnStart
+		Session.LCID = 2057
+	   '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		session("DataConn_ConnectionTimeout")	= 30
+		Session("DataConn_CommandTimeout")		= 3600
+		Session("DataConn_RuntimeUserName") 	= "altanet"
+		Session("DataConn_RuntimePassword") 	= ""
+		Session("ColorImagenFondo") = "Imagenes/ImagenDfondo.jpg"
+		Session("DataConn_ConnectionString") = "DSN=AG_FloraCenter;UID=AG_FloraCenter;PWD=;APP=AltaGestion;WSID=" & Request.ServerVariables( "REMOTE_ADDR" ) & ";DATABASE=FloraCenter"
+	End Sub
+
+	Sub Session_OnEnd   
+	End Sub
+</SCRIPT>

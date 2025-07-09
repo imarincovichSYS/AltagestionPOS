@@ -1,0 +1,326 @@
+#grid_title{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	color: #000;
+	float: none;
+	text-decoration: none;
+}
+
+#grid_TH{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	color: #FFFFFF;
+	background-color: #666666;
+}
+
+.grid_TH{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	text-align:center;
+	float: none;
+	text-decoration: none;
+	border-top: solid 1px #CCC;
+	border-right: solid 1px #CCC;
+	border-bottom: solid 1px #CCC;
+	border-left:0px;
+	border-color: #CCC;
+	color: #FFFFFF;
+	background-color: #737688;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.grid_TD{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	height: 12px;
+	text-align:center;
+	text-decoration: none;
+	border-bottom: solid 1px #CCC;
+}
+
+.grid_TEXT_TH{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	color: #FFFFFF;
+	background-color: #666666;
+	text-decoration: none;
+	border: 0px;
+	overflow:hidden;
+}
+
+.grid_TEXT{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:10px;
+	height: 14px;
+	color: #000000;
+	float: none;
+	text-decoration: none;
+	border: 0px;
+}
+
+.grid_CHECKBOX{
+  	font-size:4px;
+	width: 3em;
+  	height: 3em;
+	border: none;
+	margin: 0px;
+}
+
+.grid_RADIOBOX{
+	font-size:4px;
+	width: 3em;
+  	height: 3em;
+	border: none;
+	margin: 0px;
+}
+
+.grid_SELECT{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:9px;
+	height: 16px;
+	color: #000000;
+	float: none;
+	text-decoration: none;
+}
+
+#grid_TEXT_TH{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:10px;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	/*color: #000000;*/
+	/*background-color: #FFFFCE;*/
+	color: #FFFFFF;
+	background-color: #666666;
+	text-decoration: none;
+	border: 0px;
+	overflow:hidden;
+}
+
+#grid_TEXT{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:10px;
+	height: 14px;
+	color: #000000;
+	float: none;
+	text-decoration: none;
+	border: 0px;
+}
+
+#grid_CHECKBOX{
+  	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+  	font-size:4px;
+  	/*width: 8px;
+  	height: 8px;
+	border: 0px;*/
+	width: 1em;
+  	height: 1em;
+	border: none;
+	margin: 0px;
+}
+
+#grid_SELECT{
+	font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:9px;
+	height: 8px;
+	color: #000000;
+	float: none;
+	text-decoration: none;
+}
+
+#IMG_FILE
+{
+    BORDER: 1px solid #999;
+    WIDTH: 15px;
+	HEIGHT: 15px;
+    CURSOR: pointer;
+	border: solid 1px;;
+	border-color:#000000;
+}
+
+#IMG_FILE_12
+{
+    BORDER: 1px solid #999;
+    WIDTH: 12px;
+	HEIGHT: 12px;
+    CURSOR: pointer;
+	border: solid 1px;
+	border-color:#000000;
+}
+
+
+#IMG_FILE_10
+{
+    BORDER: 1px solid #999;
+    WIDTH: 10px;
+	HEIGHT: 10px;
+    CURSOR: pointer;
+	border: solid 1px;
+	border-color:#000000;
+}
+
+
+#title_columns{
+  font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	color: #000;
+	background-color: #EEEEEE;
+	float: none;
+	text-decoration: none;
+}
+
+#select_columns{
+  font-family:Arial, Helvetica, sans-serif, Tahoma, Verdana;
+	font-size:12px;
+	text-align:center;
+	color: #000;
+	float: none;
+	text-decoration: none;
+}
+
+#grillaDatos{
+  z-index:1; 
+  overflow: scroll;
+}
+
+#grillaEnc{
+  z-index:1;
+  overflow: auto;
+  overflow-x:hidden;
+}
+
+#grillaTotales{
+  z-index:1;
+  overflow: auto;
+  overflow-x:hidden;
+}
+
+.grid_boton
+{
+    WIDTH: 64px;
+	background-color: #DDD;
+	border-top: 3px solid #FFF; 
+	border-left: 1px solid #FFF;
+	border-bottom: 1px solid #666;
+	border-right: 1px solid #666;
+    CURSOR: pointer;
+    HEIGHT: 18px;
+}
+
+/* BEGIN: CONFIGURACION CALENDARIO*/
+
+#calendarDiv{
+	position:absolute;
+	width:176px;
+	border:1px solid #669999;
+	padding:0px;
+	background-color: #FFF;
+	font-family:arial;
+	font-size:9px;
+	padding-bottom:12px;
+	visibility:hidden;
+}
+#calendarDiv span,#calendarDiv img{
+	float:left;
+}
+#calendarDiv .selectBox,#calendarDiv .selectBoxOver{
+	
+	line-height:12px;
+	padding:1px;
+	cursor:pointer;
+	padding-left:1px;
+}
+
+#calendarDiv td{
+	padding:3px; /*espacio entre los textos del contenido del calendario*/
+	margin:0px;
+	font-size:9px;
+}
+
+#calendarDiv .selectBox{
+	border:1px solid #E2EBED;		
+	color: #E2EBED;
+	position:relative;
+}
+#calendarDiv .selectBoxOver{
+	border:1px solid #FFF;
+	background-color: #669999;
+	color: #FFF;
+	position:relative;
+}
+
+#calendarDiv .topBar{
+	height:16px;
+	padding:1px;
+	background-color: #669999;
+
+
+}
+#calendarDiv .activeDay{	/* Active day in the calendar */
+	color:#FF0000;
+}
+#calendarDiv .todaysDate{
+	height:12px;
+	line-height:10px;
+	padding:2px;
+	background-color: #E2EBED;
+	text-align:center;
+	position:absolute;
+	bottom:0px;
+	width:173px;
+}
+#calendarDiv .monthYearPicker{
+	background-color: #E2EBED;
+	border:1px solid #AAAAAA;
+	position:absolute;
+	color: #669999;
+	left:0px;
+	top:15px;
+	zIndex:1000;
+	display:none;
+
+}
+#calendarDiv #monthSelect{
+	width:62px;
+}
+#calendarDiv .monthYearPicker div{
+	float:none;
+	clear:both;	
+	padding:1px;
+	margin:1px;	
+	cursor:pointer;
+}
+#calendarDiv .monthYearActive{
+	background-color:#669999;
+	color: #E2EBED;
+}
+
+#calendarDiv td{
+	text-align:right;
+	cursor:pointer;
+}
+
+#calendarDiv .topBar img{
+	cursor:pointer;
+}
+#calendarDiv .topBar div{
+	float:left;
+	margin-right:1px;
+}
+
+/* END: CONFIGURACION CALENDARIO*/

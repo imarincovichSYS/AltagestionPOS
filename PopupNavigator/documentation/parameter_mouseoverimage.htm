@@ -1,0 +1,96 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PopupNavigator: Mouseover Image Parameter</title>
+</head>
+
+<body>
+
+<h1><font face="Arial">MouseoverImage Parameter</font></h1>
+
+<p><font face="Arial">Use this parameter to display image when user places a
+mouse pointer above the button. Position of this image can be customized using <a href="parameter_mouseoverimageposition.htm">MouseoverImagePosition</a>
+parameter.</font></p>
+<h2><font face="Arial">Format</font></h2>
+<p><font face="Arial">Same as for <a href="parameter_image.htm">Image</a>
+parameter, but default values are inherited form current values of Image.</font></p>
+<h2><font face="Arial">Examples</font></h2>
+<h3><font face="Arial">Stand-Alone</font></h3>
+
+<p><font face="Arial">Display a GIF image on mouse-over.</font></p>
+
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="MouseOverImage" value="down_arrow2.gif">
+  <param name="MouseOverImagePosition" value="LEFT;8">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0">
+archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;MouseOverImage&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;down_arrow2.gif&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;MouseOverImagePosition&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;LEFT;8&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<h3><font face="Arial">Combined with Image</font></h3>
+<p><font face="Arial">Display one image in the beginning, and the other one when
+user places a mouse pointer over the button. Since we haven't used
+MouseoverImagePosition, mouse-over image stays in the same place as the initial
+image.</font></p>
+
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Image" value="down_arrow1.gif">
+  <param name="ImagePosition" value="LEFT;8">
+  <param name="MouseOverImage" value="down_arrow2.gif">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0">
+archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;Image&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;down_arrow1.gif&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;ImagePosition&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;LEFT;8&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;MouseOverImage&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;down_arrow2.gif&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<p>&nbsp;</p>
+<p><a href="index.htm"><font face="Arial"><i>PopupNavigator Reference Home</i></font></a></p>
+
+</body>
+
+</html>

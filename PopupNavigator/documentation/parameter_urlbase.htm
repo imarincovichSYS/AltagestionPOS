@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PopupNavigator: UrlBase Parameter</title>
+</head>
+
+<body>
+
+<h1><font face="Arial">UrlBase Parameter</font></h1>
+
+<p><font face="Arial">Determines a base URL to which other URLs are relative.</font></p>
+<h2><font face="Arial">Format</font></h2>
+
+<p><font face="Courier New">VALUE=&lt;UrlBase&gt;<br>
+DEFAULT=&quot;CODEBASE&quot;</font></p>
+
+<p><font face="Arial"><b>&lt;UrlBase&gt;</b> - &quot;CODEBASE&quot; means
+relative to &lt;APPLET CODEBASE&gt;. &quot;DOCUMENT&quot; means relative to
+document in which applet resides. Absolute URL can also be specified. If you
+work with Microsoft shared borders, &quot;CODEBASE&quot; is recommended method.</font></p>
+<h2><font face="Arial">Example</font></h2>
+
+<p><font face="Arial">Let's say we want to make all target URLs relative to
+bepp.8m.com.</font></p>
+
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="UrlBase" value="http://bepp.8m.com">
+  <param name="0" value="BEPP;index.htm">
+  <param name="1" value="PopupNavigator;english/java_applets/navigation_java_applet.htm">
+PopupNavigator Java Applet - JDK 1.1.3 needed 
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>
+&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;UrlBase&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;http://bepp.8m.com&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;index.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;PopupNavigator;english/java_applets/navigation_java_applet.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<p>&nbsp;</p>
+
+<p><a href="index.htm"><font face="Arial"><i>PopupNavigator Reference Home</i></font></a></p>
+
+</body>
+
+</html>

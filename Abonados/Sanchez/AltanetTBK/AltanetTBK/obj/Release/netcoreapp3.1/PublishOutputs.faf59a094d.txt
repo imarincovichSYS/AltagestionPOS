@@ -1,0 +1,5 @@
+C:\DesarrollosNET\Rofil\VS2022_v3\AltanetTBK.exe
+C:\DesarrollosNET\Rofil\VS2022_v3\AltanetTBK.dll
+C:\DesarrollosNET\Rofil\VS2022_v3\AltanetTBK.deps.json
+C:\DesarrollosNET\Rofil\VS2022_v3\AltanetTBK.runtimeconfig.json
+C:\DesarrollosNET\Rofil\VS2022_v3\AltanetTBK.pdb

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PopupNavigator: ImagePosition Parameter</title>
+</head>
+
+<body>
+
+<h1><font face="Arial">ImagePosition Parameter</font></h1>
+
+<p><font face="Arial">Controls where image specified in <a href="parameter_image.htm">Image</a>
+parameter is placed.</font></p>
+<h2><font face="Arial">Format</font></h2>
+<p><font face="Courier New">VALUE=&quot;&lt;Position&gt;,&lt;A&gt;,&lt;B&gt;&quot;<br>
+DEFAULT:<br>
+&nbsp; &lt;Position&gt;=&quot;ABSOLUTE&quot;<br>
+&nbsp; &lt;A&gt;=&quot;0&quot;<br>
+&nbsp; &lt;B&gt;=&quot;0&quot;</font></p>
+<p><font face="Arial"><b>&lt;Position&gt;</b> defines coordinate system in which
+we are working. Can have one of the following values:</font></p>
+<ul>
+  <li><font face="Arial">ABSOLUTE - &lt;A&gt; and &lt;B&gt; represent x and y
+    coordinates relative to one of the corners of the button. If both &lt;A&gt;
+    and &lt;B&gt; are positive, then top left corner is used as a coordinate
+    center, x coordinate goes to the right and y coordinate goes to the down. A
+    negative value of either coordinate can be used to specify a coordinate
+    relative to the opposite side of the button which advances in opposite
+    direction.</font></li>
+  <li><font face="Arial">CENTER - image is placed in the center of the button.</font></li>
+  <li><font face="Arial">LEFT - image is placed &lt;A&gt; pixels to the left
+    from label.</font></li>
+  <li><font face="Arial">RIGHT - image is placed &lt;A&gt; pixels to the right
+    from label.</font></li>
+  <li><font face="Arial">TOP - image is placed &lt;A&gt; pixels to the top from
+    label.</font></li>
+  <li><font face="Arial">BOTTOM - image is placed &lt;A&gt; pixels to the bottom
+    from label.</font></li>
+</ul>
+<p><font face="Arial"><b>&lt;A&gt;</b> and <b>&lt;B&gt;</b> contain values whose
+meanings are determined by &lt;Position&gt;.</font></p>
+<h2><font face="Arial">Examples</font></h2>
+<p><font face="Arial">See <a href="image_examples.htm">Image Examples</a>.</font></p>
+
+<p>&nbsp;</p>
+<p><a href="index.htm"><font face="Arial"><i>PopupNavigator Reference Home</i></font></a></p>
+
+</body>
+
+</html>

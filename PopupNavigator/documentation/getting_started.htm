@@ -1,0 +1,259 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PopupNavigator: Getting Started</title>
+</head>
+
+<body>
+
+<h1><font face="Arial">Getting Started</font></h1>
+<p><font face="Arial">Code of PopupNavigator applet is stored in several .class files.
+These files can be uncompressed or compressed in JAR archive (which is recommended
+method). If uncompressed,
+.class files must reside in directory with name &quot;PopupNavigator&quot; -
+this is implementation detail of Java.</font></p>
+<p><font face="Arial"><b>Note to FrontPage users</b>: If you use any applet
+(including PopupNavigator) in shared border, you might be forced to to use uncompressed
+.class files. This is because FrontPage incorrectly handles ARCHIVE attribute of
+APPLET tag.</font> <font face="Arial">This behavior is encountered in FrontPage
+2000, but probably occurs in other versions too.</font></p>
+<h2><font face="Arial">Applet Tag</font></h2>
+<p><font face="Arial"> To embed the applet into your HTML page, you need to be
+familiar with syntax of APPLET tag.</font></p>
+  <p><font color="#0000C0"><font face="Courier New">&lt;applet<br>
+  &nbsp; </font></font><font face="Courier New"><font color="#0000C0">width</font>=...<br>
+  &nbsp; <font color="#0000C0">height</font>=...<br>
+  <font color="#0000C0">&nbsp; hspace</font>   =...<font color="#0000C0"><br>
+  &nbsp; vspace   =...<br>
+  &nbsp; align    =</font>...<font color="#0000C0"><br>
+  </font>&nbsp; <font color="#0000C0">code</font>=...<br>
+  &nbsp; <font color="#0000C0">codebase</font>=...<br>
+  &nbsp; <font color="#0000C0">archive</font>=...<font color="#0000C0">&gt;</font><br>
+  <font color="#0000C0">
+  &lt;param name</font>=... <font color="#0000C0">value</font>=...<font color="#0000C0">&gt;</font><br>
+  <font color="#0000C0">
+  &lt;param name</font>=... <font color="#0000C0">value</font>=...<font color="#0000C0">&gt;</font><br>
+  .<br>
+  .<br>
+  .<br>
+  <font color="#0000C0">
+  &lt;param name</font>=... <font color="#0000C0">value</font>=...<font color="#0000C0">&gt;</font><br>
+  Text for browsers without Java support.<br>
+  <font color="#0000C0">
+  &lt;/applet&gt;</font></font></p>
+<p><font face="Arial"> Here is a rough explanation of what is what:</font></p>
+<ul>
+  <li><font face="Arial"><b>width</b> and <b>height</b> - dimensions of
+    the applet.</font></li>
+  <li><font face="Arial"><b>hspace</b>, <b>vspace</b> - horizontal and vertical space
+    between surrounding elements and applet.</font></li>
+  <li><font face="Arial"><b>align</b> - </font><font face="Arial">alignment of
+    the applet. Can be: LEFT, RIGHT, TOP, TEXTTOP, MIDDLE, ABSMIDDLE, BASELINE,
+    BOTTOM,&nbsp; ABSBOTTOM, CENTER.</font></li>
+  <li><font face="Arial"><b>code</b> - full name of the .class file containing
+    applet. For PopupNavigator, this is always &quot;<font COLOR="#000000">PopupNavigator/PopupNavigatorApplet.class&quot;
+    no matter if .class files are uncompressed and stored in PopupNavigator
+    directory or compressed and stored in </font></font><font color="#000000" face="Arial">PopupNavigator.jar
+    archive.</font></li>
+  <li><font color="#000000" face="Arial"><b>codebase</b> - a URL where applet
+    should be found. This is typically relative or absolute URL to the directory
+    containing PopupNavigator/*.class or PopupNavigator.jar. If HTML page
+    resides in the same directory as PopupNavigator/*.class or
+    PopupNavigator.jar,
+    then codebase can can be omitted or set to &quot;./&quot;.</font></li>
+  <li><font color="#000000" face="Arial"><b>archive</b> - relative or absolute
+    URL to the directory containing PopupNavigator.jar. Present only if using JAR
+    archive. Typically archive=&quot;PopupNavigator.jar&quot;.</font></li>
+  <li><font color="#000000" face="Arial"><b>param</b> tags - parameters. Each
+    parameter has <b>name</b> and <b>value</b>. Through parameters you can customize
+    various aspects of the applet (e.g. button label and image, menu
+    placement...) and define menu itself. Name should be unique, otherwise only one
+    (usually last) parameter in set of parameters with same name will be applied.
+    Name is not case sensitive. Most of values are also case insensitive for PopupNavigatorApplet.</font></li>
+</ul>
+<h2><font face="Arial">First example (below is corresponding HTML code)</font></h2>
+<p><applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+</p>
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><font COLOR="#0000c0">
+<br>
+&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><font COLOR="#0000c0">
+<br>
+&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>
+&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font></b></u><font COLOR="#0000c0">
+<u><b>
+&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;</font></b></u><font COLOR="#000000"><br>
+PopupNavigator
+Java Applet - JDK 1.1.3 needed</font><font COLOR="#0000c0"><br>
+&lt;/applet&gt;</font></font></p>
+<p><font face="Arial">You should pay attention to the names of parameters: 0, 1
+and 2. Every parameter that is a menu item has a number (index) that corresponds to it's
+position within menu. </font></p>
+<p><font face="Arial"> The value of parameter is divided by semicolon in two
+so-called <a href="subparameters.htm">sub-parameters</a>. First sub-parameter is display label of menu
+item. Second sub-parameter is absolute or relative URL of target page (or mail address). </font></p>
+<h2><font face="Arial">Defining sub-menus</font></h2>
+<p>
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+  <param name="3" value="Other Test Pages">
+  <param name="3;0" value="Test Page 3;test3.htm">
+  <param name="3;1" value="Test Page 4;test4.htm">PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+</p>
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0">
+code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><font COLOR="#0000c0">
+<br>
+&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0">
+<br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;3&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Other Test Pages&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param <u><b>name=</b></u></font><u><b><font COLOR="#000000">&quot;3;0&quot;</font></b></u><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 3;test3.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param <u><b>name=</b></u></font><u><b><font COLOR="#000000">&quot;3;1&quot;</font></b></u><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 4;test4.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">
+PopupNavigator<b>
+</b>Java Applet - JDK 1.1.3 needed</font><font COLOR="#0000c0"><br>
+</font>
+&lt;/applet&gt;</font></p>
+<p><font face="Arial">As you see, name of sub-menu item contains name of parent
+menu item, semicolon and index within sub-menu. You can define sub-menu of
+sub-menu etc... there is no real constraint on how much levels you can make (currently
+there is a limit to 10 levels, but this is a matter of changing one constant
+within source code).</font></p>
+<p><font face="Arial">For more details see <a href="defining_menu.htm">Defining
+Menu</a>.</font></p>
+<h2><font face="Arial">Customizing button label</font></h2>
+<p>
+<applet width="128" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Label" value="Navigate My Website">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+  <param name="3" value="Other Test Pages">
+  <param name="3;0" value="Test Page 3;test3.htm">
+  <param name="3;1" value="Test Page 4;test4.htm">PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+</p>
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;<br>
+&nbsp;</font><font COLOR="#0000c0">
+ codebase=</font><font COLOR="#000000">&quot;./&quot;<br>
+&nbsp;</font><font COLOR="#0000c0">
+ archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;Label&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Navigate My Website&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;3&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Other Test Pages&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;3;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 3;test3.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;3;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 4;test4.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator
+Java Applet - JDK 1.1.3 needed</font><font COLOR="#0000c0"><br>
+&lt;/applet&gt;</font></font></p>
+<p><font face="Arial">As you see, button label is customized through Label
+parameter. Label parameter is actually more complex then you can see in this
+example - its value can
+contain sub-parameters for font and foreground and background colors. For more
+details, see <a href="parameter_label.htm">Label</a>  and <a href="parameter_mouseoverlabel.htm">MouseoverLabel</a>
+reference.</font></p>
+<h2><font face="Arial">Adding image to the button</font></h2>
+<p>
+<applet width="160" height="24" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Label" value="Navigate My Website">
+  <param name="Image" value="down_arrow1.gif">
+  <param name="ImagePosition" value="LEFT;4">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+  <param name="3" value="Other Test Pages">
+  <param name="3;0" value="Test Page 3;test3.htm">
+  <param name="3;1" value="Test Page 4;test4.htm">PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+</p>
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;160&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; height=</font><font COLOR="#000000">&quot;24&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;<br>
+&nbsp;</font><font COLOR="#0000c0">
+ codebase=</font><font COLOR="#000000">&quot;./&quot;<br>
+&nbsp;</font><font COLOR="#0000c0">
+ archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;Label&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Navigate My Website&quot;</font><font COLOR="#0000c0">&gt;<br>
+<b><u>&lt;param name=<font COLOR="#000000">&quot;Image&quot;</font> value=<font COLOR="#000000">&quot;down_arrow1.gif&quot;</font>&gt;<br>
+&lt;param name=<font COLOR="#000000">&quot;Image</font></u></b></font><u><b><font color="#000000">Position</font><font COLOR="#0000c0"><font COLOR="#000000">&quot;</font>
+value=<font COLOR="#000000">&quot;</font></font><font color="#000000">LEFT;4</font><font COLOR="#0000c0"><font COLOR="#000000">&quot;</font>&gt;<br>
+</font></b></u><font COLOR="#0000c0">
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;3&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Other Test Pages&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;3;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 3;test3.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;3;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 4;test4.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator
+Java Applet - JDK 1.1.3 needed</font><font COLOR="#0000c0"><br>
+&lt;/applet&gt;</font></font></p>
+<p><font face="Arial">Use Image parameter to specify URL to GIF or JPEG file.
+Use ImagePosition to specify where the image should appear (in this case, image
+is displayed 4 pixels left from label).</font></p>
+<p><font face="Arial">If you want to find out how to add &quot;hover&quot; or
+&quot;click&quot; image, see <a href="parameter_image.htm"> Image</a>  and <a href="parameter_mouseoverimage.htm">MouseoverImage</a>
+reference. To find out how to align image to
+the label, center it or place it on some absolute coordinates, see <a href="parameter_imageposition.htm">ImagePosition</a>
+reference.</font></p>
+
+<p>&nbsp;</p>
+<p><font face="Arial">This is enough to get you started building your own
+navigation system. As you advance, you'll feel the need to customize more subtle
+details... you can return to <a href="index.htm#TOC">table of contents</a> and
+have a deeper look at parameters and sub-parameters.</font></p>
+
+<p>&nbsp;</p>
+<p><a href="index.htm"><font face="Arial"><i>PopupNavigator Reference Home</i></font></a></p>
+
+</body>
+
+</html>

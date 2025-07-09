@@ -1,0 +1,14 @@
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+	Sub Session_OnStart
+		Session.LCID = 2057
+	   '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+		session("DataConn_ConnectionTimeout")	= 30
+		Session("DataConn_CommandTimeout")		= 100
+		Session("DataConn_RuntimeUserName") 	= "altanet"
+		Session("DataConn_RuntimePassword") 	= ""
+		Session("ColorImagenFondo") = "Imagenes/ImagenDfondo.jpg"
+	End Sub
+
+	Sub Session_OnEnd   
+	End Sub
+</SCRIPT>

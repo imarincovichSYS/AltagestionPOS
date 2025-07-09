@@ -1,0 +1,68 @@
+/* eliminiar todo desde aqui hacia arriba */
+#lienzo{
+	width: 1280px;
+	height:720px;
+	background-color: #666;
+	font-family: "arial",Georgia,Serif;
+	font-size: 12px;
+}
+#cabecera{
+	width: 695px;
+	height: 35px;
+	background-color: #666;
+	padding-top: 15px;
+	padding-left: 5px;
+}
+#encabezado_tabla{
+	background-color: #000;
+	width:100%;
+	top:0px;
+	
+
+}
+
+}
+#tabla_encabezado{
+	height: 100%;
+	width: 100%;
+	color: #FFF;
+	font-family: "arial",Georgia,Serif;
+	font-size: 12px;
+}
+#cuerpo{
+	height:535px;
+	width:100%;
+	overflow: auto;
+	background-color: #666;
+	font-family: "arial",Georgia,Serif;
+	font-size: 12px;
+}
+#tabla_detalle{
+	color: white;
+	font-family: "arial",Georgia,Serif;
+	font-size:12px;
+	cursor:pointer;
+}
+#parte_superior{
+	height:30px;
+	width:700px;
+	font-family: "arial",Georgia,Serif;
+	font-size:12px;
+}
+#added{
+	width:300px;
+	//height: auto;
+	float: left;
+	background-color: #666;
+}
+#word_preview{
+	width:500px;
+	height:500px;
+	float: left;
+	background-color: #666;
+	font-family: monospace;
+}
+A:link {text-decoration: none}
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
+A:hover {text-decoration: none}

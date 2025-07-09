@@ -1,0 +1,168 @@
+/*Relacionado con el menu de cabecera*/
+body{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 12px;
+}
+#boxmenutop{
+	height: 40px;
+	width: auto;    
+	background-color: #444444;
+}
+/*Fin Relacionado con el menu de cabecera*/
+/*Relacionado con el menu del medio*/
+#boxmenumiddle{
+	height: 40px;
+	width: auto;
+	background-color: #444444;
+	font-weight: bold;
+	PADDING-TOP: 2px;
+	text-align: center;
+}
+#menuhorizontal ul li{
+	padding: 4px 4px;
+	background-color: #0f0f0f;
+	display: inline;
+}
+#menuhorizontal a{
+	padding: 4px 4px;
+	color: #F5F5F5;
+	text-decoration: none;
+}
+#menuhorizontal a:hover{
+	padding: 4px 4px;
+	background-color: #EEEEEE;
+	color: #444444;
+}
+/*Fin de relacionado con el menu del medio*/
+/*Relacionado con el body opciones de la pagina*/
+#boxmenubody{
+	height: 30px;
+	width: auto;
+	background-color: #DDDDDD;
+}
+/*Fin Relacionado con el body opciones de la pagina*/
+/*Cabecera de la tabla*/
+#cabeceratabla{
+	height: 50px;
+	width: auto;
+	background-color: #DDDDDD;
+}
+/*Fin cabecera de la tabla*/
+/*Relacionado con el body lista opciones de la pagina*/
+#boxmenulista{
+	height: 350;
+	width: auto;
+	background-color: #DDDDDD;
+/*	overflow:auto;*/
+}
+/*footer de la pagina*/
+#relleno{
+	height: 140;
+	background-color: #DDDDDD;
+}
+/*Fin Relacionado con el body lista opciones de la pagina*/
+/*CSS exclusivo de 
+	- buscarcodxdesc.asp
+	- estructura.asp
+	- numerofolio.asp
+	- ultimo cambio.asp
+	- proveedor.asp
+*/
+#cuerpo{
+	width: auto;
+	background-color: #DDDDDD;
+}
+/*relacionado con la tabla de listar*/
+.table_cabecera td{
+	font-size:10px;
+	font-family:Arial;
+	font-weight: normal;
+	background-color:#444444;
+	color:#FFFFFF;
+}
+.table_detalle td{
+	font-size:10px;
+	font-family:Arial;
+	font-weight:normal;
+	background-color:#BBBBBB;
+	color:#444444;/*Color de las letras*/
+}
+/*INICIO Boton Verde*/
+input[type="button"]#bot_imprimir{
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;            
+	background: url(../images/printerw.png) no-repeat left #51a451;
+	background-size: 16px 16px;
+	color:#f7f7f9;
+	height: 20px;
+	padding: 1px 1px 15px 20px; 
+	border: 1px solid #336600;
+	font-size: 12px;
+	text-align: right;
+	font-weight: bold;
+	cursor: pointer;       
+}
+input[type="button"]#bot_imprimir{
+	transition: all 0.2s linear;  
+	-moz-transition: all 0.2s linear;  
+	-webkit-transition: all 0.2s linear;  
+}
+input[type="button"]#bot_imprimir:hover{
+	text-align: right;
+	background: url(../images/printerw.png) no-repeat left #61c361;
+	background-size: 16px 16px;
+	border-color:#52A552;
+	color:#FFFFFF;
+	height: 20px;
+	font-weight: bold;
+}
+/*FIN Boton Verde*/
+/*INICIO Boton gris*/
+input[type="button"]#bot_buscar{
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;            
+	background: url(../images/searchw.png) no-repeat left #5c5c5c;
+	background-size: 16px 16px;
+	color:#f7f7f7;
+	height: 20px;
+	padding: 1px 1px 15px 20px; 
+	border: 1px solid #242424;
+	font-size: 13px;
+	text-align: right;
+	font-weight: bold;
+	cursor: pointer;
+}
+input[type="button"]#bot_buscar{
+	transition: all 0.2s linear;  
+	-moz-transition: all 0.2s linear;  
+	-webkit-transition: all 0.2s linear;
+}
+input[type="button"]#bot_buscar:hover{
+	text-align: right;
+	background: url(../images/searchw.png) no-repeat left #b8b8b8;
+	background-size: 16px 16px;
+	height: 20px;
+	border: 1px solid #242424;
+	color:#f7f7f7;
+	font-weight: bold;
+}
+/*FIN Boton gris*/
+#guardar{ 
+background:-moz-linear-gradient(#61C361 0%,#51A451 100%);
+background:-ms-linear-gradient(#61C361 0%,#51A451 100%); 
+background:-o-linear-gradient(#61C361 0%,#51A451 100%); 
+background:-webkit-linear-gradient(#61C361 0%,#51A451 100%); 
+background:linear-gradient(#61C361 0%,#51A451 100%);
+border:solid 1px #52A552; 
+border-radius:5px;
+text-align:center;
+padding:2px; 
+color:#FFF; 
+width:75px; 
+} 
+#guardar:hover{
+background:-moz-linear-gradient(#51A451 0%,#61C361 100%);
+color:#FFF; 
+}

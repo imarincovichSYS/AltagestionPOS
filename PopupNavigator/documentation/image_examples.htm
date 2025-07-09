@@ -1,0 +1,182 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PopupNavigator: Image Examples</title>
+</head>
+
+<body>
+
+<h1><font face="Arial">Image Examples</font></h1>
+<p><font face="Arial">These examples illustrate use of <a href="parameter_image.htm">Image</a>
+and <a href="parameter_imageposition.htm">ImagePosition</a>
+parameters.</font></p>
+<h2><font face="Arial">Example #1</font></h2>
+<p><font face="Arial">Display a JPEG image as a background. Since ImagePosition
+is not used, image left upper corner is placed in the left upper corner of the
+button.</font></p>
+
+<applet width="96" height="96" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Image" value="clouds.jpg">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+  PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;96&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; height=</font><font COLOR="#000000">&quot;96&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;Image&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;clouds.jpg&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<h2><font face="Arial">Example #2</font></h2>
+<p><font face="Arial">Display a GIF image in the top of the button label.</font></p>
+
+<applet width="128" height="64" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Image" value="down_arrow1.gif">
+  <param name="ImagePosition" value="TOP;4">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+  PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; height=</font><font COLOR="#000000">&quot;64&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;Image&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;down_arrow1.gif&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;ImagePosition&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;TOP;4&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<h2><font face="Arial">Example #3</font></h2>
+<p><font face="Arial">Display a GIF image on a coordinates 24 (x), 16 (y) relative to the
+top left corner of the button.</font></p>
+
+<applet width="128" height="64" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Image" value="down_arrow1.gif">
+  <param name="ImagePosition" value="ABSOLUTE;24;16">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+  PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; height=</font><font COLOR="#000000">&quot;64&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;Image&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;down_arrow1.gif&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;ImagePosition&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;ABSOLUTE;24;16&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<h2><font face="Arial">Example #4</font></h2>
+
+<p><font face="Arial">Display a GIF image 24 pixels from
+the right border and 16 pixels from top of the button.</font></p>
+
+<applet width="128" height="64" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Image" value="down_arrow1.gif">
+  <param name="ImagePosition" value="ABSOLUTE;-24;16">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+  PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; height=</font><font COLOR="#000000">&quot;64&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;Image&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;down_arrow1.gif&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;ImagePosition&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;ABSOLUTE;<b><u>-24</u></b>;16&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<h2><font face="Arial">Example #5</font></h2>
+<p><font face="Arial">Display an animated GIF in the center of the button. Label
+is set to empty string.</font></p>
+
+<applet width="128" height="30" code="PopupNavigator/PopupNavigatorApplet.class" codebase="./" archive="PopupNavigator.jar">
+  <param name="Image" value="commingsoon.gif">
+  <param name="ImagePosition" value="CENTER">
+  <param name="Label" value="">
+  <param name="0" value="BEPP;http://bepp.8m.com">
+  <param name="1" value="Test Page 1;test1.htm">
+  <param name="2" value="Test Page 2;test2.htm">
+  PopupNavigator Java Applet - JDK 1.1.3 needed
+</applet>
+
+<p><font face="Courier New"><font COLOR="#0000c0">&lt;applet<br>
+&nbsp; width=</font><font COLOR="#000000">&quot;128&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; height=</font><font COLOR="#000000">&quot;30&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; code=</font><font COLOR="#000000">&quot;PopupNavigator/PopupNavigatorApplet.class&quot;</font><br>
+<font COLOR="#0000c0">&nbsp; codebase=</font><font COLOR="#000000">&quot;./&quot;</font><font COLOR="#0000c0"><br>
+&nbsp; archive=</font><font COLOR="#000000">&quot;PopupNavigator.jar&quot;</font><font COLOR="#0000c0">&gt;<br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;Image&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;commingsoon.gif&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;ImagePosition&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;CENTER&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+<u><b>&lt;param name=</b></u></font><u><b><font COLOR="#000000">&quot;Label&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;&quot;</font></b></u><font COLOR="#0000c0"><u><b>&gt;</b></u><br>
+&lt;param name=</font><font COLOR="#000000">&quot;0&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;BEPP;http://bepp.8m.com&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;1&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 1;test1.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+&lt;param name=</font><font COLOR="#000000">&quot;2&quot;</font><font COLOR="#0000c0">
+value=</font><font COLOR="#000000">&quot;Test Page 2;test2.htm&quot;</font><font COLOR="#0000c0">&gt;<br>
+</font><font COLOR="#000000">PopupNavigator Java Applet - JDK 1.1.3 needed<br>
+</font><font COLOR="#0000c0">&lt;/applet&gt;</font></font></p>
+
+<p>&nbsp;</p>
+<p><a href="index.htm"><font face="Arial"><i>PopupNavigator Reference Home</i></font></a></p>
+
+</body>
+
+</html>

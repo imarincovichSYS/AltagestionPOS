@@ -1,0 +1,120 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PopupNavigator: Sub-Parameters</title>
+</head>
+
+<body>
+
+<h1><font face="Arial">Abut Sub-Parameters</font></h1>
+<p><font face="Arial">VALUE inside &lt;PARAM> tag has structure of semicolon-delimited list of
+sub-parameters. If you want delimiter other then semicolon, use <a href="parameter_delimiterchar.htm"> DelimiterChar</a> applet parameter. If you want to use semicolon as part
+of sub-parameter, precede it with escape character (default is backslash, changeable through
+<a href="parameter_escapechar.htm"> EscapeChar</a> applet parameter).</font></p>
+<p><font face="Arial">You can to exclude a sub-parameter from the list. Example: "Some
+Label;;BOLD&quot; - second sub-parameter is excluded, and default value is used instead.
+More examples ";Dialog" - first sub-parameter is excluded, "Some Label;" - equivalent to "Some Label".&nbsp;</font></p>
+<p><font face="Arial">Every sub-parameter obeys some rules of how it has to be formatted.</font></p>
+<h2>&nbsp;</h2>
+<h2><font face="Arial">List of shared sub-parameter types<br>
+<font size="2">(there may be other sub-parameters private to the particular
+parameter)</font></font></h2>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="BackgroundColor">BackgroundColor</a>&gt;</b> - Syntax is the same as for the
+<a href="#ForegroundColor">ForegroundColor</a>.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="Boolean">Boolean</a>&gt;</b> - "TRUE" or
+&quot;FALSE&quot; (case insensitive).</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="Char">Char</a>&gt;</b> - Single character. If more than one character is entered, only the
+first applies.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="FontName">FontName</a>&gt;</b> - Case
+sensitive name of the font.</font></p>
+<p><font face="Arial">Supported Java fonts:</font></p>
+<ul>
+  <li><font face="Arial">Dialog</font></li>
+  <li><font face="Arial">SansSerif</font></li>
+  <li><font face="Arial">Serif</font></li>
+  <li><font face="Arial">Monospaced</font></li>
+  <li><font face="Arial">Helvetica</font></li>
+  <li><font face="Arial">TimesRoman</font></li>
+  <li><font face="Arial">Courier</font></li>
+  <li><font face="Arial">DialogInput</font></li>
+  <li><font face="Arial">ZapfDingbats</font></li>
+</ul>
+<p><font face="Arial">Feel
+free to experiment with another font names, but be careful about cross-platform
+compatibility.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="FontStyle">FontStyle</a>&gt;</b> - BOLD, ITALIC, BOLDITALIC (or ITALICBOLD). Underlined style is not
+supported due the limitations of Java. Case insensitive.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="FontSize">FontSize</a>&gt;</b> - Font size in points.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="ForegroundColor">ForegroundColor</a>&gt;</b> - Color of text. Supports three formats:</font></p>
+<p><font face="Arial">1) Single integer - decimal representation of 4-byte unsigned integer,
+in which byte 0 (least significant byte) is blue, byte 1 is green and byte 2 is red component of RGB coded color. Byte 3 (most significant byte)
+is unused and should be zero. Hexadecimal support will bi added in the future.</font></p>
+<p><font face="Arial">2) RGB - three integers from 0 to 255 (for red, green and blue) delimited by spaces.
+For example: "255 255 255" is white, "255 0 0" is bright red.</font></p>
+<p><font face="Arial">3) Named color (case insensitive) - recommended. Supported colors:</font></p>
+<p><font face="Arial">Absolute:</font></p>
+<ul>
+  <li><font face="Arial">BLACK</font></li>
+  <li><font face="Arial">BLUE</font></li>
+  <li><font face="Arial">CYAN</font></li>
+  <li><font face="Arial">DARKGRAY</font></li>
+  <li><font face="Arial">GRAY</font></li>
+  <li><font face="Arial">GREEN</font></li>
+  <li><font face="Arial">LIGHTGRAY</font></li>
+  <li><font face="Arial">MAGENTA</font></li>
+  <li><font face="Arial">ORANGE</font></li>
+  <li><font face="Arial">PINK</font></li>
+  <li><font face="Arial">RED</font></li>
+  <li><font face="Arial">WHITE</font></li>
+  <li><font face="Arial">YELLOW</font></li>
+</ul>
+<p><font face="Arial">System specific:</font></p>
+<blockquote>
+  <p><font face="Arial">Will be implemented...</font></p>
+</blockquote>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="Frame">Frame</a>&gt;</b> - Target frame or window for URL. Defaults to "_self".</font></p>
+<p><font face="Arial">Supported special frame names:</font></p>
+<ul>
+  <li><font face="Arial">"_self" - Shows document within the window and frame that contain the applet.</font></li>
+  <li><font face="Arial">"_parent" - Applet's parent frame. If the applet's frame has
+    no</font> <font face="Arial">parent frame, acts the same as "_self".</font></li>
+  <li><font face="Arial">"_top" - Top-level frame of the applet's window. If the applet's
+    frame is the top-level frame, acts the same as "_self". If there is a parent
+    frame, but that parent frame has no parent, then &quot;_top&quot; acts same
+    as &quot;_parent&quot;.</font></li>
+  <li><font face="Arial">"_blank" - New, unnamed top-level window.</font></li>
+</ul>
+<p><font face="Arial">You can also use name of some frame or window defined in your presentation.
+If a target does not already exist, a new top-level window with the specified name is created, and the document is shown there.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="Label">Label</a>&gt;</b>  - Any string
+representing the caption. For menu items, set this to &quot;-&quot; if you want
+separator. If you want to use <a href="parameter_delimiterchar.htm">delimiter
+char</a>  within label, precede it with <a href="parameter_escapechar.htm">escape
+char</a>.</font></p>
+<p>&nbsp;</p>
+<p><font face="Arial"><b>&lt;<a name="URL">URL</a>&gt;</b> - Absolute or relative (to
+value specified in <a href="parameter_urlbase.htm">UrlBase</a>),
+local or Internet, URL. Relative URLs are recommended. Beside
+&quot;http://&quot;, the protocol within URL can be &quot;https://&quot;,
+&quot;file://&quot; and
+&quot;mailto:&quot;.</font></p>
+
+<p>&nbsp;</p>
+<p><a href="index.htm"><font face="Arial"><i>PopupNavigator Reference Home</i></font></a></p>
+
+</body>
+
+</html>
