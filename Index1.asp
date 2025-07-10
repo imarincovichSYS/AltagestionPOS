@@ -1,20 +1,41 @@
+<!--#include file="config/config.asp" -->
 <%
 website = Request.ServerVariables("SERVER_NAME")
-   websystem = "AltaGestion"
-   webtitle = "AltaGestion, el primer sistema de control y gestión por internet."
-   if len(Session("Nombre_usuario")) > 0 then cUser = " (" & Session("Nombre_usuario") & ")"
-%>
-<html>
-<head>
-	<title><%=websystem%><%=cUser%></title>
-</head>
-<frameset rows="*,1" frameborder='0' framespacing='0' border='0'>
-	<frame frameborder=0 marginwidth=0 marginheight=0 framespacing='0' src="usuario.asp"	noresize scrolling=no	name="Clave"></frame>
-	<frame frameborder=0 marginwidth=0 marginheight=0 framespacing='0' src="Empty.asp"		noresize scrolling=no	name="Paso"></frame>
-</frameset>
-<noframes>
-<body>
-	Your browser does not support frames. <a href='Index.htm'>start</a>
-</body></noframes>
+websystem = "AltaGestion"
+webtitle = "AltaGestion, el primer sistema de control y gestión por internet."
 
+Dim cUser
+If Len(Session("Nombre_usuario")) > 0 Then
+    cUser = " (" & Session("Nombre_usuario") & ")"
+Else
+    cUser = ""
+End If
+%>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title><%=websystem & cUser%></title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #frame1 {
+            height: calc(100% - 1px);
+            width: 100%;
+            border: none;
+        }
+        #frame2 {
+            height: 1px;
+            width: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="frame1" src="usuario.asp" name="Clave"></iframe>
+    <iframe id="frame2" src="Empty.asp" name="Paso"></iframe>
+</body>
 </html>

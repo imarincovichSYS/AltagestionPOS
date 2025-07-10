@@ -2,7 +2,10 @@
 <% 
 
 Session.LCID = 2057
-
+%>
+<!--#include file="config/load_env.asp" -->
+<!--#include file="config/config.asp" -->
+<%
 Response.Expires = 0 
 'Session.Abandon
 
@@ -22,12 +25,10 @@ else
 	Session("ColorImagenFondo") = "Imagenes/ImagenDfondo.jpg"
 	Session("ImagenFondo")		= "Imagenes/ImagenDfondo.jpg"
 
-	'Session("ConexionInicial") = "Driver={SQL Server};Server=SRVSQL01,1433;UID=AG_Sanchez;PWD=Vp?T+!mZpJds;APP=BackOffice;WSID=" & Request.ServerVariables( "REMOTE_ADDR" ) & ";DATABASE=Sanchez"
-	'Session("DataConn_ConnectionString") = "Driver={SQL Server};Server=SRVSQL01,1433;Database=Sanchez;Uid=AG_Sanchez;Pwd=Vp?T+!mZpJds;WSID=" & Request.ServerVariables( "REMOTE_ADDR" ) & ";" 
 
-Session("ConexionInicial") = "Provider=MSOLEDBSQL;Password=Vp?T+!mZpJds;APP=BackOffice;WSID=" & Request.ServerVariables( "REMOTE_ADDR" ) & ";Database=Sanchez;User ID=AG_Sanchez;TrustServerCertificate=True;Server=SRVSQL01,1433;"
+'Session("ConexionInicial") = "Provider=MSOLEDBSQL;Password=Vp?T+!mZpJds;APP=BackOffice;WSID=" & Request.ServerVariables( "REMOTE_ADDR" ) & ";Database=Sanchez;User ID=AG_Sanchez;TrustServerCertificate=True;Server=SRVSQL01,1433;"
 	'Session("DataConn_ConnectionString") = "DSN=AG_Sanchez;UID=AG_Sanchez;PWD=Vp?T+!mZpJds;WSID=" & Request.ServerVariables( "REMOTE_ADDR" ) & ";DATABASE=Sanchez"
-	Session("DataConn_ConnectionString") = "Provider=MSOLEDBSQL;Password=Vp?T+!mZpJds;APP=BackOffice;WSID=" & Request.ServerVariables( "REMOTE_ADDR" ) & ";Database=Sanchez;User ID=AG_Sanchez;TrustServerCertificate=True;Server=SRVSQL01,1433;"
+''	Session("DataConn_ConnectionString") = "Provider=MSOLEDBSQL;Password=Vp?T+!mZpJds;APP=BackOffice;WSID=" & Request.ServerVariables( "REMOTE_ADDR" ) & ";Database=Sanchez;User ID=AG_Sanchez;TrustServerCertificate=True;Server=SRVSQL01,1433;"
 	
 	
 	Session("URL_Corporativa") = "www.altagestion.cl"
@@ -44,7 +45,7 @@ Session("ConexionInicial") = "Provider=MSOLEDBSQL;Password=Vp?T+!mZpJds;APP=Back
 
 	SET Conn = Server.CreateObject("ADODB.Connection")
 'Response.Write(Session("DataConn_ConnectionString"))
-	Conn.Open Session("Dataconn_ConnectionString")
+	Conn.Open Session("DataConn_ConnectionString")
 'Response.End
 	Conn.commandtimeout=3600
 	cSQL = "Exec PAR_ListaParametros 'ColBotNormal'"

@@ -3,33 +3,42 @@ Dim RutaProyecto, RutaInf, version_sis
 version_sis   = "v2.0"
 nom_proyecto  = "AltaGestion"
 StrSite       = mid(Request.ServerVariables("SCRIPT_NAME"),1,instr(mid(Request.ServerVariables("SCRIPT_NAME"), 2), "/")+1)
-RutaProyecto  = "http://" &Request.serverVariables("Server_Name")& StrSite
+RutaProyecto  = "http://" & Request.ServerVariables("Server_Name") & StrSite
 RutaInf       = "/altagestion/tmp/"
 
-Nombre_DSN    = "AG_Sanchez" 'BD oficial del servidor
+' Usar valores desde Session cargadas por Autentificacion.asp
+APP = Session("Nombre_Aplicacion") & " (" & Session("login") & ")"
+WSID = Session("login") & " (" & Request.ServerVariables("REMOTE_ADDR") & ")"
 
+strConnect = "Provider=MSOLEDBSQL;" & _
+             "Password=" & Session("DB_PASS") & ";" & _
+             "WSID=" & WSID & ";" & _
+             "Database=" & Session("DB_NAME") & ";" & _
+             "User ID=" & Session("DB_USER") & ";" & _
+             "TrustServerCertificate=True;" & _
+             "Server=" & Session("DB_SERVER") & ";" & _
+             "APP=" & APP & ";"
 
-APP = Session("Nombre_Aplicacion") & "(" & session("login") & ")"
-WSID = Session("Login") & " (" & Request.ServerVariables("REMOTE_ADDR") & ")"
+strConnect_Replica = "DSN=" & Session("DB_REPLICA_DSN") & ";" & _
+                     "UID=" & Session("DB_USER") & ";" & _
+                     "PWD=" & Session("DB_PASS") & ";" & _
+                     "APP=" & APP & ";" & _
+                     "WSID=" & WSID & ";" & _
+                     "DATABASE=" & Session("DB_NAME")
 
-'strConnect = "Driver={SQL Server};Server=SRVSQL01,1433;Database=Sanchez;Uid=AG_Sanchez;Pwd=Vp?T+!mZpJds;"
-strConnect = "Provider=MSOLEDBSQL;Password=Vp?T+!mZpJds;WSID=" & WSID & ";Database=Sanchez;User ID=AG_Sanchez;TrustServerCertificate=True;Server=SRVSQL01,1433;APP=" &APP&";"
-'strConnect = "DSN=" & Nombre_DSN & ";UID=AG_Sanchez;PWD=Vp?T+!mZpJds;id=SYSGestion;password=;APP=" & APP & ";WSID=" & WSID & ";DATABASE=Sanchez"
-strConnect_Replica = "DSN=AG_Sanchez_Replica;UID=AG_Sanchez_Replica;PWD=Vp?T+!mZpJds;APP=" & APP & ";WSID=" & WSID & ";DATABASE=Sanchez"
+Dim Conn : Set Conn = Server.CreateObject("ADODB.Connection")
+Dim Conn1x : Set Conn1x = Server.CreateObject("ADODB.Connection")
+Dim ConnReplica : Set ConnReplica = Server.CreateObject("ADODB.Connection")
 
-Dim Conn : set Conn = Server.CreateObject("ADODB.Connection")
-Dim Conn1x : set Conn1x = Server.CreateObject("ADODB.Connection")
-Dim ConnReplica : set ConnReplica = Server.CreateObject("ADODB.Connection")
-
-sub OpenConn()
+Sub OpenConn()
   Conn.Open strConnect
-end sub
+End Sub
 
-sub OpenConn1()
+Sub OpenConn1()
   Conn1x.Open strConnect
-end sub
+End Sub
 
-sub OpenConn_Replica()
+Sub OpenConn_Replica()
   ConnReplica.Open strConnect_Replica
-end sub
+End Sub
 %>
