@@ -1,108 +1,81 @@
-<!-- #include file="Scripts/Inc/Cache.Inc" -->
+<!--#include file="Scripts/Inc/Cache.Inc" -->
 <%
-	Cache
-'Response.Write Session("Dataconn_ConnectionString") & "**"
+  Cache
 %>
-<html>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-   <meta http-equiv="Pragma" content="no-cache">
-   <meta http-equiv="Expires" content="Tue, 01 Jan 1980 1:00:00 GMT">   
-   <title>Ingreso de usuario</title>
-   <link rel="stylesheet" type="text/css" href="CSS/Estilos.css">
-	<script src="Scripts/Js/Caracteres.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Ingreso al sistema</title>
+
+  <!-- Bootstrap local -->
+  <link href="CSS/bootstrap.min.css" rel="stylesheet">
+  <script src="JS/bootstrap.bundle.min.js"></script>
+
+  <!-- Tu JS -->
+  <script src="Scripts/Js/Caracteres.js"></script>
 </head>
-<body background="<%=Session("ImagenFondo")%>" leftmargin="0" topmargin="0">
+<body class="bg-light" style="background-image: url('<%=Session("ImagenFondo")%>'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
 
-<form name="Formulario" action="Validacion_Usuario.asp" method="post" target="Paso">
-<table width=100% height=100% border=0>
- <tr>
-  <td valign=center>
-		<table class="formulario" cellPadding="0" width="450" border="0" align="center">
-			<tr>
-			  <td align="center" colspan="2" class="barratitulo"><%=session("websystem")%></td>
-			</tr>
-			<tr>
-			  <td align="center" colspan="2"><br>Digite el usuario y la clave de acceso para ingresar al sistema<br><br></td>
-			</tr>
-			<tr>
-			  <td align="right" width="50%">Usuario</td>
-				<td>
-					<input type="text" size="12" maxlength="12" name="Usuario" class="datos">
-				</td>
-			</tr>
-			<tr>
-			  <td align="right">Clave acceso</td>
-			  <td><input type="password" size="12" maxlength="12" name="Clave" class="datos"></td>
-			</tr>
-			<tr>
-				<td colspan=2 align="center">Si desea cambiar su clave ingresela a continuación</td>
-			</tr>
-			<tr>
-				<td colspan=2 align="center">
-					<input type="password" size="10" maxlength="10" name="Nva_Clave" class="FuenteInput">
-					&nbsp;&nbsp;&nbsp;&nbsp;
-					<input type="password" size="10" maxlength="10" name="Reingreso_Nva_Clave" class="FuenteInput">
-				</td>
-		   </tr>
-		   <tr>
-			  <td align="center" colspan="2"><br>
-			  <input type="button" OnClick="JavaScript:fIngresar()" value=" Aceptar " class="FuenteInput"><br><br>
-			  </td>
-		   </tr>
-		</table>
-	</td>
-</tr>
-<tr>					
-	<td class="FuenteInput" align=center nowrap>
-		<input class="TextoColorNegro" width=1 height=1 type=image name="Enter" src="<%=Session("ImagenFondo")%>">
-	</td>
-</tr>
-</table>
+  <div class="container min-vh-100 d-flex align-items-center justify-content-center">
+    <div class="card shadow w-100" style="max-width: 500px;">
+      <div class="card-header text-center fw-bold">
+        <%=session("websystem")%>
+      </div>
+      <div class="card-body">
+        <form name="Formulario" method="post" target="Paso">
+          <div class="mb-3">
+            <label for="Usuario" class="form-label">Usuario</label>
+            <input type="text" name="Usuario" id="Usuario" maxlength="12" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="Clave" class="form-label">Clave de acceso</label>
+            <input type="password" name="Clave" id="Clave" maxlength="12" class="form-control" required>
+          </div>
+          <div class="mb-3 text-center small">Si desea cambiar su clave, ingrésela a continuación:</div>
+          <div class="mb-3 d-flex gap-2">
+            <input type="password" name="Nva_Clave" maxlength="10" class="form-control" placeholder="Nueva clave">
+            <input type="password" name="Reingreso_Nva_Clave" maxlength="10" class="form-control" placeholder="Reingreso">
+          </div>
+          <div class="d-grid">
+            <button type="button" onclick="fIngresar()" class="btn btn-primary">Aceptar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-</form>
+  <script>
+    function fCambiarClave() {
+      var ClaveNueva = document.Formulario.Nva_Clave.value;
+      var ReingresoClaveNueva = document.Formulario.Reingreso_Nva_Clave.value;
 
+      if (ClaveNueva !== ReingresoClaveNueva) {
+        alert('El reingreso de la clave no es consistente, por favor revise.');
+        document.Formulario.Reingreso_Nva_Clave.focus();
+        return;
+      }
+
+      document.Formulario.action = "CambioClave_Usuario.asp";
+      document.Formulario.submit();
+    }
+
+    function fIngresar() {
+      var ClaveNueva = document.Formulario.Nva_Clave.value.trim();
+      var ReingresoClaveNueva = document.Formulario.Reingreso_Nva_Clave.value.trim();
+
+      if (ClaveNueva !== "" || ReingresoClaveNueva !== "") {
+        fCambiarClave();
+      } else {
+        document.Formulario.action = "Validacion_Usuario.asp";
+        document.Formulario.submit();
+      }
+    }
+
+    document.getElementById("Usuario").focus();
+  </script>
 </body>
 </html>
-
-<script language="JavaScript">
-
-  //alert('Se solicita por un tema de seguridad realizar un cambio de clave periodicamente')
-	function fCambiarClave()
-	{
-		var Error = 'N';
-		var ClaveNueva			= document.Formulario.Nva_Clave.value;
-		var ReingresoClaveNueva = document.Formulario.Reingreso_Nva_Clave.value;
-		if ( ClaveNueva != ReingresoClaveNueva )
-		{
-			alert ( 'El reingreso de la clave no es consistente, por favor revise.' );
-			document.Formulario.Reingreso_Nva_Clave.focus();
-			Error = "S";
-		}
-		
-		if ( Error == "N" )
-		{
-			document.Formulario.action = "CambioClave_Usuario.asp";		
-			document.Formulario.target = "Paso";
-			document.Formulario.submit();
-		}
-	}
-
-	function fIngresar()
-	{
-		var ClaveNueva			= document.Formulario.Nva_Clave.value;
-		var ReingresoClaveNueva = document.Formulario.Reingreso_Nva_Clave.value;
-		if ( ! validEmpty(ClaveNueva) || ! validEmpty(ReingresoClaveNueva) )
-		{
-			fCambiarClave();
-		}
-		else
-		{
-			document.Formulario.action = "Validacion_Usuario.asp";
-			document.Formulario.target = "Paso";
-			document.Formulario.submit();
-		}
-	}
-	document.Formulario.Usuario.focus();
-</script>
