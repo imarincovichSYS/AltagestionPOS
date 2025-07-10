@@ -35,7 +35,7 @@
             <label for="Clave" class="form-label">Clave de acceso</label>
             <input type="password" name="Clave" id="Clave" maxlength="12" class="form-control" required>
           </div>
-          <div class="mb-3 text-center small">Si desea cambiar su clave, ingrésela a continuación:</div>
+          <div class="mb-3 text-center small">Si desea cambiar su clave, ingr&eacute;sela a continuaci&oacute;n:</div>
           <div class="mb-3 d-flex gap-2">
             <input type="password" name="Nva_Clave" maxlength="10" class="form-control" placeholder="Nueva clave">
             <input type="password" name="Reingreso_Nva_Clave" maxlength="10" class="form-control" placeholder="Reingreso">
