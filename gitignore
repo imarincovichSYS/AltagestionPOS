@@ -1,0 +1,11 @@
+# Ignorar archivo de configuración de entorno
+config/.env
+
+# Archivos temporales comunes
+*.ldb
+*.bak
+*.tmp
+*.log
+
+# Archivos de configuración sensibles
+*.dsn
