@@ -1,7 +1,7 @@
 <!--#include file="Scripts/Inc/Cache.Inc" -->
 <%
   Cache
-%>
+%> 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,7 +13,7 @@
 
   <!-- Bootstrap local -->
   <link href="CSS/bootstrap.min.css" rel="stylesheet">
-  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script> 
 
   <!-- Tu JS -->
   <script src="Scripts/Js/Caracteres.js"></script>
