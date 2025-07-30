@@ -1,5 +1,5 @@
 <%
-' Este archivo NO vuelve a leer el .env, solo arma la cadena si las variables ya estÃ¡n en Session
+' Este archivo NO vuelve a leer el .env, solo arma la cadena si las variables ya están en Session
 
 If Not IsEmpty(Session("DB_SERVER")) Then
     Dim APP, WSID

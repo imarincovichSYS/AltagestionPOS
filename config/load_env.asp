@@ -1,5 +1,5 @@
 <%
-' Solo cargar el .env si no se ha cargado antes en la sesiÃ³n
+' Solo cargar el .env si no se ha cargado antes en la sesión
 Function CargarEnv(ruta)
     Dim fso, archivo, linea, partes, clave, valor
     Set fso = Server.CreateObject("Scripting.FileSystemObject")

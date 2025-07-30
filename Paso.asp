@@ -2,13 +2,13 @@
 <%
 	Cache
 	Session.LCID = 2057
-	NomFuncion = Request("NomFun")
-	
 
     if len(trim(Session("Dataconn_ConnectionString"))) > 0 then
     	SET Conn = Server.CreateObject("ADODB.Connection")
     	Conn.Open Session("Dataconn_ConnectionString")
     	Conn.commandtimeout=100
+
+		
     	
     	CierreEnCurso = "N"
     	cSQL = "Exec PAR_ListaParametros 'CIERRENCURSO'"

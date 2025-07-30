@@ -1,0 +1,66 @@
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000000000000000000000000000000000000..f70833d1e779dbfe86080bf3fc42e4125304f02c
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1,9 @@
++# Altagestion POS Modernization
++
++This repository contains a legacy ASP application originally designed for Internet Explorer with `frameset` layout. Two new HTML5 entry pages are included to begin migrating towards modern browsers:
++
++- `index.html` – Replaces `Index.htm` using `<iframe>` elements and Flexbox for layout.
++- `login-frame.html` – Replaces `Index1.htm` and loads `Usuario.asp` inside a flexible container.
++
++Both pages maintain the original frame structure using HTML5 and should work in Chrome or any modern browser.
++They include Bootstrap 5 from `CSS/bootstrap.min.css` and `js/bootstrap.bundle.min.js` for consistent styling.
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..2a2fa9f4201333c472608c0f1039fed4c3671e21
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,21 @@
++<!DOCTYPE html>
++<html lang="es">
++<head>
++<meta charset="UTF-8">
++<title>AltaGestion</title>
++<link rel="stylesheet" href="CSS/bootstrap.min.css">
++<style>
++  html,body { height:100%; margin:0; }
++  iframe { border:none; width:100%; }
++  #Menu { height:32px; }
++  #Botones,#Mensajes { height:5%; }
++</style>
++</head>
++<body class="d-flex flex-column h-100">
++  <iframe id="Menu" name="Menu" src="navigation.asp?Usuario=Hoteleria"></iframe>
++  <iframe id="Trabajo" name="Trabajo" class="flex-fill" src="Empty.asp"></iframe>
++  <iframe id="Botones" name="Botones" src="Empty.asp"></iframe>
++  <iframe id="Mensajes" name="Mensajes" src="Mensajes.asp"></iframe>
++  <script src="js/bootstrap.bundle.min.js"></script>
++</body>
++</html>
+diff --git a/login-frame.html b/login-frame.html
+new file mode 100644
+index 0000000000000000000000000000000000000000..5c0686b7e481a855a2a447922a6cb9e8ccdc20af
+--- /dev/null
++++ b/login-frame.html
+@@ -0,0 +1,18 @@
++<!DOCTYPE html>
++<html lang="es">
++<head>
++<meta charset="UTF-8">
++<title>AltaGestion</title>
++<link rel="stylesheet" href="CSS/bootstrap.min.css">
++<style>
++  html,body { height:100%; margin:0; }
++  iframe { border:none; width:100%; }
++  #Paso { height:1px; }
++</style>
++</head>
++<body class="d-flex flex-column h-100">
++  <iframe id="Clave" name="Clave" class="flex-fill" src="Usuario.asp"></iframe>
++  <iframe id="Paso" name="Paso" src="Empty.asp"></iframe>
++  <script src="js/bootstrap.bundle.min.js"></script>
++</body>
++</html>

@@ -22,7 +22,7 @@
 
   <div class="container min-vh-100 d-flex align-items-center justify-content-center">
     <div class="card shadow w-100" style="max-width: 500px;">
-      <div class="card-header text-center fw-bold">
+      <div class="card-header text-center fw-bold">        
         <%=session("websystem")%>
       </div>
       <div class="card-body">
