@@ -1,16 +1,36 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-	<title>AltaGestion</title>
+    <meta charset="UTF-8">
+    <title>AltaGestion</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        .layout {
+            display: grid;
+            grid-template-rows: 32px 1fr 5% 5%;
+            height: 100vh;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
-<frameset id='frameMenu' name='frameMenu' rows="32px,*,5%,5%" frameborder='0' framespacing='0' border='0'>
-	<frame frameborder=1 marginwidth=0 marginheight=0 framespacing='0' src="navigation.asp?Usuario=Hoteleria"	noresize scrolling=no	name="Menu"></frame>
-	<frame frameborder=0 marginwidth=0 marginheight=0 framespacing='0' src="Empty.asp"		noresize scrolling=auto	name="Trabajo"></frame>
-	<frame frameborder=0 marginwidth=0 marginheight=0 framespacing='0' src="Empty.asp"		noresize scrolling=no	name="Botones"></frame>
-	<frame frameborder=0 marginwidth=0 marginheight=0 framespacing='0' src="Mensajes.asp"	noresize scrolling=no	name="Mensajes"></frame>
-</frameset>
-<noframes>
 <body>
-	Su browser no soporta marcos / Your browser does not support frames.<a href='Index.htm'>start</a>
+    <div class="layout">
+        <iframe src="navigation.asp?Usuario=Hoteleria" name="Menu" scrolling="no"></iframe>
+        <iframe src="Empty.asp" name="Trabajo" scrolling="auto"></iframe>
+        <iframe src="Empty.asp" name="Botones" scrolling="no"></iframe>
+        <iframe src="Mensajes.asp" name="Mensajes" scrolling="no"></iframe>
+    </div>
+
+    <noscript>
+        Su navegador no soporta JavaScript. <a href="Index.htm">Inicio</a>
+    </noscript>
 </body>
-</noframes>
 </html>

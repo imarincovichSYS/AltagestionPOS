@@ -1,14 +1,32 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-	<title>AltaGestion</title>
+    <meta charset="UTF-8">
+    <title>AltaGestion</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+        .layout {
+            display: grid;
+            grid-template-rows: 1fr 1px;
+            height: 100vh;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+        }
+    </style>
 </head>
-<frameset rows="*,1" frameborder='0' framespacing='0' border='0'>
-	<frame frameborder=0 marginwidth=0 marginheight=0 framespacing='0' src="usuario.asp"	noresize scrolling=no	name="Clave"></frame>
-	<frame frameborder=0 marginwidth=0 marginheight=0 framespacing='0' src="Empty.asp"		noresize scrolling=no	name="Paso"></frame>
-</frameset>
-<noframes>
 <body>
-	Your browser does not support frames. <a href='Index.htm'>start</a>
-</body></noframes>
+    <div class="layout">
+        <iframe src="usuario.asp" name="Clave" scrolling="no"></iframe>
+        <iframe src="Empty.asp" name="Paso" scrolling="no"></iframe>
+    </div>
 
+    <noscript>
+        Your browser does not support JavaScript. <a href="Index.htm">start</a>
+    </noscript>
+</body>
 </html>
