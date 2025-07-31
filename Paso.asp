@@ -3,7 +3,7 @@
 	Cache
 	Session.LCID = 2057
 	NomFuncion = Request("NomFun")
-	Session("Dataconn_ConnectionString") = Session("ConexionInicial")
+	
 
     if len(trim(Session("Dataconn_ConnectionString"))) > 0 then
     	SET Conn = Server.CreateObject("ADODB.Connection")
